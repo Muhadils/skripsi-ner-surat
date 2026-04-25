@@ -76,7 +76,7 @@ def main():
         output_dir="./results_profil", 
         num_train_epochs=12, 
         per_device_train_batch_size=8, 
-        evaluation_strategy="epoch", 
+        eval_strategy="epoch", 
         learning_rate=3e-5, 
         save_strategy="no", 
         use_cpu=True

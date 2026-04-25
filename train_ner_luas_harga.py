@@ -66,7 +66,7 @@ def main():
     eval_dataset = dataset['test'].map(tokenize_and_align_labels, batched=True)
     config = AutoConfig.from_pretrained(model_name, num_labels=5, id2label=id2label, label2id=label2id)
     model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True)
-    training_args = TrainingArguments(output_dir="./results_luas_harga", num_train_epochs=12, per_device_train_batch_size=8, evaluation_strategy="epoch", learning_rate=3e-5, save_strategy="no", use_cpu=True)
+    training_args = TrainingArguments(output_dir="./results_luas_harga", num_train_epochs=12, per_device_train_batch_size=8, eval_strategy="epoch", learning_rate=3e-5, save_strategy="no", use_cpu=True)
     trainer = Trainer(model=model, args=training_args, train_dataset=train_dataset, eval_dataset=eval_dataset, data_collator=DataCollatorForTokenClassification(tokenizer), compute_metrics=compute_metrics)
     trainer.train()
     model.save_pretrained("./model_ner_luas_harga"); tokenizer.save_pretrained("./model_ner_luas_harga")
