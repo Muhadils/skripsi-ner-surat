@@ -1,24 +1,40 @@
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 import os
+import shutil
 
 model_name = "indobenchmark/indobert-lite-base-p2"
 save_path = "./indobert-base-local"
 
-def download():
-    print(f"Mencoba mengunduh model {model_name}...")
-    if not os.path.exists(save_path):
-        os.makedirs(save_path)
+def fix_and_download():
+    print(f"--- MEMPERBAIKI & MENDOWNLOAD MODEL {model_name} ---")
+    
+    # Hapus folder lama yang mungkin rusak agar bersih
+    if os.path.exists(save_path):
+        print("Membersihkan folder lama...")
+        shutil.rmtree(save_path)
+    
+    os.makedirs(save_path, exist_ok=True)
     
     try:
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModelForTokenClassification.from_pretrained(model_name, num_labels=9)
+        print("Sedang mengambil model dari server (Sabar, ini mendownload data besar)...")
+        tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
+        model = AutoModelForTokenClassification.from_pretrained(model_name, num_labels=3)
         
+        print("Menyimpan model ke folder lokal...")
         tokenizer.save_pretrained(save_path)
         model.save_pretrained(save_path)
-        print(f"BERHASIL! Model disimpan di {save_path}")
+        
+        # Tambahan: Pastikan file tokenizer tidak kosong
+        if os.path.exists(os.path.join(save_path, "tokenizer_config.json")):
+            print("\nBERHASIL! Model sudah lengkap di folder lokal.")
+            print("Sekarang Anda bisa menjalankan: python train_ner_person.py")
+        else:
+            print("\nPERINGATAN: Download selesai tapi ada file yang kurang. Coba jalankan lagi skrip ini.")
+            
     except Exception as e:
-        print(f"Gagal mengunduh: {e}")
-        print("Saran: Tunggu 5-10 menit lalu coba lagi, atau gunakan koneksi internet lain.")
+        print(f"\nGAGAL: {e}")
+        print("\nSaran: Kemungkinan internet Anda membatasi akses (Error 429).")
+        print("Tunggu 5-10 menit, lalu jalankan lagi skrip ini.")
 
 if __name__ == "__main__":
-    download()
+    fix_and_download()

@@ -1,0 +1,10 @@
+Active code page: 65001
+
+C:\Users\Lenovo\Downloads\program_dilla>set GIT_CLONE_PROTECTION_ACTIVE=false && rmdir /s /q indobert-base-local && git clone --depth 1
+The system cannot find the file specified.
+
+C:\Users\Lenovo\Downloads\program_dilla>     https://huggingface.co/indobenchmark/indobert-lite-base-p2 indobert-base-local
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\program_dilla>
