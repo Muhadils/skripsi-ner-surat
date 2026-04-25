@@ -9,7 +9,8 @@ import numpy as np
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 # 1. Konfigurasi Khusus (Hanya NIK)
-model_name = "indobenchmark/indobert-lite-base-p2"
+# Gunakan model lokal yang sudah di-download untuk menghindari Error 429
+model_name = "./indobert-base-local"
 label_list = ["O", "B-NIK", "I-NIK"]
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for i, label in enumerate(label_list)}
