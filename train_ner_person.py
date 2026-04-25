@@ -9,8 +9,7 @@ import numpy as np
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 # 1. Konfigurasi
-# Gunakan model lokal yang sudah di-download untuk menghindari Error 429
-model_name = "./indobert-base-local"
+model_name = "indobenchmark/indobert-lite-base-p2"
 label_list = ["O", "B-PERSON", "I-PERSON"]
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for i, label in enumerate(label_list)}
@@ -75,7 +74,7 @@ def main():
     train_dataset = split_dataset['train'].map(tokenize_and_align_labels, batched=True)
     eval_dataset = split_dataset['test'].map(tokenize_and_align_labels, batched=True)
 
-    config = AutoConfig.from_pretrained(model_name, num_labels=3, id2label=id2label, label2id=label2id)
+    config = AutoConfig.from_pretrained(model_name, num_labels=len(label_list), id2label=id2label, label2id=label2id)
     model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True)
 
     training_args = TrainingArguments(

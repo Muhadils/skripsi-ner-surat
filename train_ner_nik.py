@@ -9,8 +9,7 @@ import numpy as np
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 # 1. Konfigurasi Khusus (Hanya NIK)
-# Gunakan model lokal yang sudah di-download untuk menghindari Error 429
-model_name = "./indobert-base-local"
+model_name = "indobenchmark/indobert-lite-base-p2"
 label_list = ["O", "B-NIK", "I-NIK"]
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for i, label in enumerate(label_list)}
@@ -22,7 +21,7 @@ class WeightedTrainer(Trainer):
         labels = inputs.get("labels")
         outputs = model(**inputs)
         logits = outputs.get("logits")
-        weights = torch.tensor([1.0, 20.0, 20.0]).to(logits.device) # Bobot lebih tinggi karena NIK sangat spesifik
+        weights = torch.tensor([1.0, 20.0, 20.0]).to(logits.device)
         loss_fct = nn.CrossEntropyLoss(weight=weights)
         loss = loss_fct(logits.view(-1, self.model.config.num_labels), labels.view(-1))
         return (loss, outputs) if return_outputs else loss
@@ -53,25 +52,39 @@ def tokenize_and_align_labels(examples):
                     else: label_ids[idx] = label2id["I-NIK"]
         labels.append(label_ids)
     tokenized_inputs["labels"] = labels
+    tokenized_inputs.pop("offset_mapping")
     return tokenized_inputs
 
 def main():
     print("--- MEMULAI PELATIHAN MODEL TERPISAH (NIK) ---")
+    if not os.path.exists('dataset_ner.json'):
+        print("Error: dataset_ner.json tidak ditemukan.")
+        return
+
     with open('dataset_ner.json', 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
     with_ent = [d for d in raw_data if any(e['label'] == 'NIK' for e in d['entities'])]
     without_ent = [d for d in raw_data if not any(e['label'] == 'NIK' for e in d['entities'])]
     final_data = with_ent + without_ent[:20]
+    
     dataset = Dataset.from_list(final_data).train_test_split(test_size=0.15)
     train_dataset = dataset['train'].map(tokenize_and_align_labels, batched=True)
     eval_dataset = dataset['test'].map(tokenize_and_align_labels, batched=True)
-    config = AutoConfig.from_pretrained(model_name, num_labels=3, id2label=id2label, label2id=label2id)
+    
+    config = AutoConfig.from_pretrained(model_name, num_labels=len(label_list), id2label=id2label, label2id=label2id)
     model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True)
+    
     training_args = TrainingArguments(output_dir="./results_nik", num_train_epochs=10, per_device_train_batch_size=8, eval_strategy="epoch", learning_rate=3e-5, save_strategy="no", use_cpu=True)
-    trainer = Trainer(model=model, args=training_args, train_dataset=train_dataset, eval_dataset=eval_dataset, data_collator=DataCollatorForTokenClassification(tokenizer), compute_metrics=compute_metrics)
+    
+    trainer = WeightedTrainer(
+        model=model, args=training_args, train_dataset=train_dataset, eval_dataset=eval_dataset, 
+        data_collator=DataCollatorForTokenClassification(tokenizer), compute_metrics=compute_metrics
+    )
+    
     trainer.train()
-    model.save_pretrained("./model_ner_nik"); tokenizer.save_pretrained("./model_ner_nik")
-    print("SELESAI! Model NIK disimpan di: ./model_ner_nik")
+    model.save_pretrained("./model_ner_nik")
+    tokenizer.save_pretrained("./model_ner_nik")
+    print("SELESAI! Model NIK disimpan.")
 
 if __name__ == "__main__":
     main()

@@ -9,8 +9,7 @@ import numpy as np
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 # 1. Konfigurasi Profil (ALAMAT, KERJA, TGL, JABATAN)
-# Gunakan model lokal yang sudah di-download untuk menghindari Error 429
-model_name = "./indobert-base-local"
+model_name = "indobenchmark/indobert-lite-base-p2"
 label_list = ["O", "B-ALAMAT", "I-ALAMAT", "B-KERJA", "I-KERJA", "B-TGL", "I-TGL", "B-JABATAN", "I-JABATAN"]
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for i, label in enumerate(label_list)}
@@ -54,10 +53,15 @@ def tokenize_and_align_labels(examples):
                     else: label_ids[idx] = label2id[f"I-{label}"]
         labels.append(label_ids)
     tokenized_inputs["labels"] = labels
+    tokenized_inputs.pop("offset_mapping")
     return tokenized_inputs
 
 def main():
     print("--- PELATIHAN MODEL PROFIL (ALAMAT, KERJA, TGL, JABATAN) ---")
+    if not os.path.exists('dataset_ner.json'):
+        print("Error: dataset_ner.json tidak ditemukan.")
+        return
+
     with open('dataset_ner.json', 'r', encoding='utf-8') as f:
         raw_data = json.load(f)
     
@@ -91,7 +95,7 @@ def main():
     trainer.train()
     model.save_pretrained("./model_ner_profil")
     tokenizer.save_pretrained("./model_ner_profil")
-    print("SELESAI! Model Profil disimpan di: ./model_ner_profil")
+    print("SELESAI! Model Profil disimpan.")
 
 if __name__ == "__main__":
     main()
