@@ -1,9 +1,9 @@
 import pandas as pd
 import re
 
-# File sumber hasil ekstrak sebelumnya
-input_excel = r'c:\Users\Lenovo\Downloads\program_dilla\dataset_surat.xlsx'
-output_excel = r'c:\Users\Lenovo\Downloads\program_dilla\dataset_surat_siap_anotasi.xlsx'
+# Gunakan path relatif agar bisa jalan di laptop maupun Cloud (Colab/GitHub)
+input_excel = 'dataset_surat.xlsx'
+output_excel = 'dataset_surat_siap_anotasi.xlsx'
 
 def clean_text(text):
     if pd.isna(text): return ""

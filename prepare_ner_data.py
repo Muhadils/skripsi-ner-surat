@@ -83,6 +83,6 @@ def prepare_ner_dataset(excel_path, json_output):
     print(f"Dataset NER berhasil dibuat: {json_output}")
 
 if __name__ == "__main__":
-    input_file = r'c:\Users\Lenovo\Downloads\program_dilla\dataset_surat_siap_anotasi.xlsx'
-    output_file = r'c:\Users\Lenovo\Downloads\program_dilla\dataset_ner.json'
+    input_file = 'dataset_surat_siap_anotasi.xlsx'
+    output_file = 'dataset_ner.json'
     prepare_ner_dataset(input_file, output_file)
