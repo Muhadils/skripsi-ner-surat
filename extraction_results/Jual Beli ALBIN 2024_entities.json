@@ -1,0 +1,53 @@
+{
+  "source_file": "Jual Beli ALBIN 2024.docx",
+  "extracted_entities": {
+    "NAMA": [
+      "ALBIN",
+      "KADANG",
+      "SAWIA",
+      "SUMARNI",
+      "NADIRA",
+      "Nik",
+      "GELA",
+      "Dua Puluh Empat kami",
+      "GELA Nik"
+    ],
+    "NIK": [
+      "7315073011700001",
+      "7315075107650003",
+      "7315075303750002",
+      "7315075205930003",
+      "7315074311720002"
+    ],
+    "ALAMAT": [
+      "Saksi-saksi : 1",
+      "Pajalele,RT",
+      "Kanipang,RT:001/RW:001Desa",
+      "Pao,RT:001/RW:001Kel",
+      "Salu dadeko,RT"
+    ],
+    "PEKERJAAN": [
+      "Petani/Pekebun"
+    ],
+    "JABATAN": [
+      "jaminan"
+    ],
+    "TGL": [
+      "15 Februari 2024"
+    ],
+    "LUAS": [
+      "990.855 M2",
+      "990,855 M2",
+      "4.850 M2",
+      "32,5 m2",
+      "1.000M2",
+      "162,5 m2"
+    ],
+    "HARGA": [
+      "Rp. 35.000",
+      "Rp.35.000.000",
+      "Rp.97.000.000"
+    ]
+  },
+  "text_preview": "SURAT PENGANTAR Nomor : 08 / T.AH / LK-MB / II / 2024 Selanjutnya disebut Pihak II (Pihak Kedua), Untuk Mendapatkan Akte Jual Beli / Akta Pembagian Hak Bersama / Akte Hibah yang Terletak di Salu dadeko Lingkungan Mattiro bulu Kelurahan Tadokkong, Dengan Luas : 990.855 M2,Bangunan seluas M2 NOP: 73.15.080.002. 018 - 0067.0 Tertulis atas Nama ALIRAH HENDA dengan Batas – Batas Sebagai Berikut : Tanah tersebut diatas tidak ada tuntutan / gugatan dari pihak lain dan tidak ada sengketa sampai surat ke"
+}

@@ -6,3 +6,5 @@ openpyxl
 python-docx
 accelerate
 scikit-learn
+flask
+spacy

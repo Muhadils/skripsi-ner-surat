@@ -1,54 +1,55 @@
-import torch
-from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
-import docx
 import os
+from complete_pipeline import CompletePipeline
 
-# 1. Konfigurasi
-# Ganti ke "./model_ner_person" jika ingin menguji model khusus Nama
-model_path = "./model_ner_person" 
+TEST_FOLDER = "./datasurat"
+MAX_FILES = 3
+
+
+def format_entities_for_display(entities):
+    """Format entity dictionary to readable output."""
+    ordered_keys = ["NAMA", "NIK", "ALAMAT", "PEKERJAAN", "JABATAN", "TGL", "LUAS", "HARGA"]
+    lines = []
+    for key in ordered_keys:
+        values = entities.get(key, [])
+        if values:
+            lines.append(f"  - {key:10}: {', '.join(values[:5])}")
+    if not lines:
+        lines.append("  - Tidak ada entitas yang terdeteksi.")
+    return lines
 
 def main():
-    if not os.path.exists(model_path):
-        print(f"Peringatan: Folder model '{model_path}' tidak ditemukan.")
-        print("Mencoba menggunakan model lama './model_ner_indobert'...")
-        path_to_use = "./model_ner_indobert"
-    else:
-        path_to_use = model_path
-
-    if not os.path.exists(path_to_use):
-        print(f"Error: Tidak ada model yang ditemukan di {path_to_use}")
+    if not os.path.exists(TEST_FOLDER):
+        print(f"Error: Folder data tidak ditemukan: {TEST_FOLDER}")
         return
 
-    print(f"Memuat model dari {path_to_use}...")
-    tokenizer = AutoTokenizer.from_pretrained(path_to_use)
-    model = AutoModelForTokenClassification.from_pretrained(path_to_use)
-    
-    nlp_ner = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="simple")
+    print("Memuat pipeline NER lengkap...")
+    ner_pipeline = CompletePipeline()
 
-    test_folder = "./datasurat"
-    # Ambil 3 file secara acak dari folder datasurat
-    all_files = [f for f in os.listdir(test_folder) if f.endswith('.docx')]
-    files_to_test = all_files[:3]
+    all_files = sorted([f for f in os.listdir(TEST_FOLDER) if f.endswith(".docx")])
+    files_to_test = all_files[:MAX_FILES]
+
+    if not files_to_test:
+        print("Error: Tidak ada file .docx untuk diuji.")
+        return
 
     print("\n" + "="*50)
-    print("--- HASIL EKSTRAKSI NER ---")
+    print("--- HASIL EKSTRAKSI NER (MULTI-MODEL) ---")
     print("="*50)
-    
+
     for file_name in files_to_test:
-        file_path = os.path.join(test_folder, file_name)
+        file_path = os.path.join(TEST_FOLDER, file_name)
         print(f"\n[ FILE: {file_name} ]")
-        
-        raw_text = read_docx_full(file_path)
-        # Ambil 1000 karakter pertama (biasanya data penting ada di sini)
-        text_to_test = raw_text[:1000] 
-        
-        final_ents = nlp_ner(text_to_test)
-        if not final_ents:
-            print("  - Tidak ada entitas yang terdeteksi.")
-        else:
-            for ent in final_ents:
-                print(f"  - {ent['entity_group']:8}: {ent['word']} (Confidence: {ent['score']:.2%})")
+
+        result = ner_pipeline.process_document(file_path)
+        if not result:
+            print("  - Gagal memproses dokumen.")
+            continue
+
+        for line in format_entities_for_display(result.get("extracted_entities", {})):
+            print(line)
+
     print("\n" + "="*50)
+
 
 if __name__ == "__main__":
     main()

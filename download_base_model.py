@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, AutoModelForTokenClassification
+from transformers import AutoTokenizer, AutoModel
 import os
 import shutil
 
@@ -18,7 +18,8 @@ def fix_and_download():
     try:
         print("Sedang mengambil model dari server (Sabar, ini mendownload data besar)...")
         tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
-        model = AutoModelForTokenClassification.from_pretrained(model_name, num_labels=3)
+        # Simpan backbone saja supaya checkpoint lokal tetap netral terhadap jumlah label task.
+        model = AutoModel.from_pretrained(model_name)
         
         print("Menyimpan model ke folder lokal...")
         tokenizer.save_pretrained(save_path)

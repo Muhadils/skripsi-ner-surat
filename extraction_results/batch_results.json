@@ -1,0 +1,2838 @@
+[
+  {
+    "source_file": "JUAL BELI AKKAS-ATIRAH SALUSAPE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SYAMSUL ALAM RAMLI",
+        "KADANG",
+        "Dua Puluh Lima kami",
+        "AKKAS"
+      ],
+      "NIK": [
+        "7315041709710001",
+        "7308131106980002",
+        "7315070308790002"
+      ],
+      "ALAMAT": [
+        "Jln Cekdam",
+        "Perumahan Griya Lerang lerang Indah Blok"
+      ],
+      "PEKERJAAN": [
+        "PNS"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "29 Aprili 2025",
+        "1 Tahun 2024",
+        "29 April 2025"
+      ],
+      "LUAS": [
+        "280 M2",
+        "280 m2",
+        "200 M2",
+        "60 m2",
+        "60 M2"
+      ],
+      "HARGA": [
+        "Rp. 40.000.000",
+        "Rp. 40"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Dua Puluh Sebilan bulan April tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : AKKAS / 53 Thn Nik : 7315041709710001 T.T.L/Umur : Polmas , 17 – 09 - 1971 Pekerjaan : PNS Alamat : Perumahan Griya Lerang lerang Indah Blok.C No.13,RT: 001/RW: 001 Kel.Benteng Sawitto Kec.Paleteang Kab.Pinrang Prov.Sul-Sul. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SYAMSUL ALAM RAMLI,S.A.P / 26 Thn Nik : 7308131106980002 T.T.L"
+  },
+  {
+    "source_file": "JUAL BELI NASIR SALUSAPE.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "ALBIN",
+        "WILDA Nik",
+        "NILLA SARI",
+        "SUMARNI",
+        "HUSNI Nik",
+        "MURNI Nik",
+        "LINDA ISKANDAR",
+        "IRA",
+        "AMPI",
+        "HERMAN",
+        "JAMAUNA Nik",
+        "GELA Nik",
+        "KADANG",
+        "MUHAMMAD",
+        "WARMAN BAHRUL Nik",
+        "ALYA Nik",
+        "NILLA SARI Nik",
+        "WARMAN BAHRUL",
+        "RUSMAN Nik",
+        "SARAPIA",
+        "MURNI",
+        "NURMANG",
+        "SAWIA",
+        "RUSMAN",
+        "RUKI",
+        "BUNGA GANGKA",
+        "SAHATI",
+        "SARAPIA Tempat",
+        "IRNAWATI",
+        "Dua Puluh Empat kami",
+        "NAISA",
+        "SUKUR",
+        "HUSNI",
+        "AHMAD RUSYDI.T Nik",
+        "NADIRA",
+        "WILDA",
+        "JAMAUNA",
+        "Nik",
+        "SULTAN SILIWANGI",
+        "GELA",
+        "RAMLI",
+        "ALYA",
+        "NASRA",
+        "RUKI Nik",
+        "HERMAN Nik",
+        "MUH.ADITIA ARKAM Nik",
+        "MUH.ISMATULLAH Nik"
+      ],
+      "NIK": [
+        "7315073011700001",
+        "7315070205960001",
+        "7315074309550002",
+        "7315075303750002",
+        "7315074505050002",
+        "7315070701750001",
+        "7315071308940001",
+        "7315074402010001",
+        "7315075107650003",
+        "7602011606030002",
+        "7315077012730001",
+        "7602015407760003",
+        "7315074501850001",
+        "3172021007780017",
+        "7315074311720002",
+        "7315077112750082",
+        "7315074606870004",
+        "7315074703890002",
+        "7315070202050002",
+        "7315074309840004",
+        "7315075010870009",
+        "7315076609020002",
+        "7315076805920001",
+        "7371101503740019",
+        "7315061012670004",
+        "7315072506020001",
+        "7315074709880005",
+        "7315074902800001",
+        "7315073112700124",
+        "7315071811050002",
+        "7315073112800066",
+        "7604062010750003",
+        "7315075110670002",
+        "7315077012620004",
+        "7315075205930003",
+        "7315042911680002",
+        "7315073112470032"
+      ],
+      "ALAMAT": [
+        "Cappalete,RT",
+        "Pajalele,RT",
+        "Kajuangin,RT:001/RW:001Desa",
+        "Lemosusu,RT",
+        "BTN AMPI,RT: -/RW: -Kel/Desa",
+        "Pao,RT:005/RW:005Kel",
+        "Lambalumama,RT",
+        "Lambalumama,RT:/RW:Kel",
+        "Salusape,RT:002/RW:003 Kel",
+        "Salu kalobe,RT:001/RW:001Kel",
+        "Aspol Brimob Pa’baeng baeng",
+        "Saksi-saksi : 1",
+        "Pao,RT:005/RW:005KelBetteng Kec",
+        "Salu dadeko,RT",
+        "Kajuangin,RT: 001/RW: 001Desa",
+        "Sepang",
+        "Sepang,RT:002/RW:001 Desa",
+        "Bungi,RT: 002/RW: 002Desa",
+        "Kanipang,RT:001/RW:001Desa",
+        "Salukalobe,RT",
+        "Sepang,RT: 001/RW: 001 Desa",
+        "Pao,RT:001/RW:001Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "15 Februari 2024"
+      ],
+      "LUAS": [
+        "11.100 M2",
+        "570 m2",
+        "3.361 m2",
+        "711,5 M2",
+        "9.400 M2",
+        "32,5 m2",
+        "2.950 M2",
+        "2.000 m2",
+        "1.000M2",
+        "510 M2",
+        "990.855 M2",
+        "1.470 M2",
+        "4.850M2",
+        "2.400 M2",
+        "345 m2",
+        "990,855 M2",
+        "711,5 m2",
+        "4.850 M2",
+        "345 M2",
+        "570 M2",
+        "711,5M2",
+        "4.850 m2",
+        "1.470 m2",
+        "3.361 M2",
+        "2.400 m2",
+        "2.000 M2",
+        "162,5 m2"
+      ],
+      "HARGA": [
+        "Rp. 60.000.000",
+        "Rp. 65.000.000",
+        "Rp.97.000.000",
+        "Rp. 35.000",
+        "Rp. 50.000.000",
+        "Rp.30.000.000",
+        "Rp.35.000.000",
+        "Rp.50.000.000"
+      ]
+    },
+    "text_preview": "SURAT PENGANTAR Nomor : 08 / T.AH / LK-MB / II / 2024 Selanjutnya disebut Pihak II (Pihak Kedua), Untuk Mendapatkan Akte Jual Beli / Akta Pembagian Hak Bersama / Akte Hibah yang Terletak di Salu dadeko Lingkungan Mattiro bulu Kelurahan Tadokkong, Dengan Luas : 990.855 M2,Bangunan seluas M2 NOP: 73.15.080.002. 018 - 0067.0 Tertulis atas Nama ALIRAH HENDA dengan Batas – Batas Sebagai Berikut : Tanah tersebut diatas tidak ada tuntutan / gugatan dari pihak lain dan tidak ada sengketa sampai surat ke"
+  },
+  {
+    "source_file": "JUAL BELI TANAH ASRITA-ABD.GANI SALUKALOBE2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "ASRITA",
+        "HAMRULLAH Nik",
+        "ABD.GANI",
+        "ABD.GANI Tempat",
+        "Nik",
+        "HAMRULLAH",
+        "ARSITA",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315061203910001",
+        "7315066408850001",
+        "7601124403770001",
+        "7315074107530003",
+        "7315073112740018",
+        "7315064301810001",
+        "7315063112560122",
+        "7315063112580014"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Dusun Bungi,RT:001/RW:002 Desa"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "25 Agustus 2025"
+      ],
+      "LUAS": [
+        "4.000 M2",
+        "5.394 M2",
+        "9.500 M2"
+      ],
+      "HARGA": [
+        "Rp. 80.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Dua Puluh Lima bulan Agustus tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : ASRITA / 40 Thn Nik : 7315066408850001 T.T.L/Umur : Bungi , 24 – 08 - 1985 Pekerjaan : Wiraswasta Alamat : Dusun Bungi,RT:001/RW:002 Desa.Bungi Kec.Duampanua Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : ABD.GANI / 66 Thn Nik : 7315063112580014 T.T.L/Umur : Sanja Kampung Baru , 31– 12 - 1958 Pekerjaan : Peta"
+  },
+  {
+    "source_file": "JUAL BELI TANAH NASRUDDIN-NANA SALUKALOBE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "NANA Tempat",
+        "KADANG",
+        "HASNI",
+        "NASRUDDIN",
+        "NANA",
+        "Nik",
+        "MUH SALEH",
+        "MURA",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315076211730001",
+        "7315074107650008",
+        "9271062007590001",
+        "7315074107810008",
+        "7315070107840009",
+        "7315060208910001",
+        "9271062604020001",
+        "7315071510740002",
+        "9271064709710001",
+        "9271060810050001",
+        "7315075912010001"
+      ],
+      "ALAMAT": [
+        "Pajalele,RT:001/RW:003 Desa",
+        "Salukalobe,RT:-/RW:- Kel",
+        "Saksi-saksi : 1",
+        "Salukalobe",
+        "Bajeng Kaluku,RT: 001/RW: 001 Desa"
+      ],
+      "PEKERJAAN": [
+        "Petani/ Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "03 Juni 2025"
+      ],
+      "LUAS": [
+        "9.700 M2",
+        "9.700 m2",
+        "5.900 M2"
+      ],
+      "HARGA": [
+        "Rp.350.000.000",
+        "Rp.80.000.000",
+        "Rp. 80.000.000",
+        "Rp.170"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Sepuluh bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : NASRUDDIN / 50 Thn Nik : 7315071510740002 T.T.L/Umur : Salukalobe, 15 – 10 - 1974 Pekerjaan : Petani/ Pekebun Alamat : Pajalele,RT:001/RW:003 Desa.Binanga karaeng Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : NANA / 43 Thn Nik : 7315074107810008 T.T.L/Umur : Salukalobe , 01 – 07 - 1981 Pekerjaan "
+  },
+  {
+    "source_file": "JUAL BELI TANAH KUASA-NAHIRA KALOSI 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "KUASA",
+        "SAKKA",
+        "MULIANI Nik",
+        "Nik",
+        "BABA",
+        "NAHIRA",
+        "MULIANI",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315072001620001",
+        "7315071507420001",
+        "7315077112810107",
+        "7315071501740003",
+        "7315075110840001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Kalosi,RT",
+        "Kalosi ,RT",
+        "Kalosi,RT:001/RW:007 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "01 Juli 2025"
+      ],
+      "LUAS": [
+        "6.500 M2",
+        "465 M2",
+        "465 m2"
+      ],
+      "HARGA": [
+        "Rp. 30.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Satu bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SAKKA / 83 Thn Nik : 7315071507420001 T.T.L/Umur : Kalosi , 15 – 07 – 1942 Pekerjaan : Petani/Pekebun Alamat : Kalosi,RT:001/RW:007 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : BABA / 43 Thn Nik : 7315077112810107 T.T.L/Umur : Kalosi, 31 - 12 - 1981 Pekerjaan : Mengurus Rumah Tangga A"
+  },
+  {
+    "source_file": "AHLI WARIS LAPPA 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SUNARTI",
+        "NURJANNAH",
+        "Gessa"
+      ],
+      "NIK": [
+        "7315075612760001",
+        "7315076503700003"
+      ],
+      "ALAMAT": [],
+      "PEKERJAAN": [
+        "kelengkapan berkas Pengurusan PHB Tanah"
+      ],
+      "JABATAN": [],
+      "TGL": [
+        "03 Oktober 2025",
+        "14 Oktober 2025"
+      ],
+      "LUAS": [
+        "2.400 M2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT KETERANGAN AHLI WARIS Kami yang bertanda tangan dibawah ini masing-masing Ahli Waris dari Almarhumah Lappa yang menyatakan dengan sesungguhnya dan sanggup diangkat sumpah, bahwa Almarhumah Lappa bertempat tinggal terakhir di Salusape Kel.Tadokkong Kec.Lembang Kabupaten Pinrang Provinsi Sulawesi Selatan, yang telah meninggal dunia pada Tanggal – - 2022 berdasarkan berdasarka keterangan kematian kelurahan tadokkong Nomor: 66/KT-LB/X/2025,semasa hidupnya telah menikah dengan Suaminya yang ber"
+  },
+  {
+    "source_file": "JUAL BELI TANAH SUNRE-SYAMSUDDIN 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SYAMSUDDIN",
+        "KADANG",
+        "SYAMSUDDIN Tempat",
+        "SUNRE",
+        "SUNARTI",
+        "KILANG SAPPU dengar ukuran serta",
+        "SUNARTI Nik",
+        "Dua Puluh Lima kami",
+        "KILANG SAPPU seluas"
+      ],
+      "NIK": [
+        "7602125802860001",
+        "7315071502860001",
+        "7602126405950002",
+        "7602124510680001",
+        "7602123112570023"
+      ],
+      "ALAMAT": [
+        "Paku,RT:000/RW:000 Desa",
+        "Salu dadeko,RT:001/RW:004 Kel",
+        "Jl Tani Sebelah selatan berbatasan",
+        "Salu dadeko,RT"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "16 Juni 2025"
+      ],
+      "LUAS": [
+        "1.346 m2",
+        "1.346 M2",
+        "3.287 M2"
+      ],
+      "HARGA": [
+        "Rp. 45.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Enam belas bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SUNRE / 56 Tahun Nik : 7602124510680001 T.T.L/Umur : Polmas, 05 – 10 – 1968 Pekerjaan : Mengurus Rumah Tangga Alamat : Jl.Gatot subroto,RT.-/RW.- Kel/Desa.Simboro Kec. Kab.Mamuju Prov.Sul-Bar. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SYAMSUDDIN / 39 Tahun Nik : 7315071502860001 T.T.L/Umur : Salu dadeko, 15 – 02 – 1986 Pekerjaan : Petan"
+  },
+  {
+    "source_file": "JUAL BELI BUTTU SAPPA 2024.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "ST.ARAFAH Tempat",
+        "MILIATI",
+        "MUDIRA",
+        "MORO Nik",
+        "LINDA WARIS Nik",
+        "SITTI AMINAH BINTI ASISTABA",
+        "SUREDA Nik",
+        "FATMAN Nik",
+        "PATA Tempat",
+        "MASRI BIN TAMBI",
+        "MAHIR",
+        "SUREDA",
+        "MASRI BIN TAMBI IC",
+        "SUDIN BIN PARAGUN",
+        "ABD.HAKIM",
+        "HAMASIAH",
+        "NAPISAH",
+        "HERMAN.B",
+        "FATMAN",
+        "MARDIANA",
+        "MUHIDDIN Tempat",
+        "KADANG",
+        "ABU BAKAR SAID Nik",
+        "SYARIFUDDIN Nik",
+        "MARDIANA Nik",
+        "SUARDI",
+        "SIDA BINTI YONTA",
+        "SARIA",
+        "ABU BAKAR SAID",
+        "HANISA SIDA",
+        "AMUSRIANI",
+        "SURIANI",
+        "NUR AISYAH",
+        "SALAMIA",
+        "HAERUDDIN",
+        "MORO",
+        "EDING",
+        "UPA",
+        "SULTAN Tempat",
+        "ABDUL AZIS",
+        "SITTI AMINAH BINTI ASISTABA IC",
+        "SURIANI Tempat",
+        "MUDIRA Tempat",
+        "ERIK",
+        "ST.ARAFAH",
+        "HASARUDDIN ALWI",
+        "ALLA",
+        "SYARIFUDDIN Tempat",
+        "ANTON DARRA",
+        "LINDA WARIS",
+        "Dua Puluh Empat kami",
+        "PATI",
+        "HERMAN.B Tempat",
+        "EDING Tempat",
+        "SULTAN",
+        "PATA",
+        "SYARIFUDDIN",
+        "SUMMANG",
+        "Hj.MARAWIAH",
+        "MUHIDDIN",
+        "Nurbaeti Nik",
+        "SINAU",
+        "SUMMANG Tempat",
+        "HASNAH",
+        "SYAMSIANA MADA ALI",
+        "Nik",
+        "SAHIDA PAO SAKKA",
+        "JINA",
+        "ALLA Nik",
+        "Nurbaeti",
+        "HAMSIA",
+        "ERIK Nik"
+      ],
+      "NIK": [
+        "7315075207800001",
+        "7315077112590106",
+        "7315070807820001",
+        "7315077112650139",
+        "7315075008730004",
+        "7315072904000001",
+        "7315073112570087",
+        "7315070611010002",
+        "7315075503810003",
+        "7315071510960003",
+        "7604064703720002",
+        "7315074408860001",
+        "6408111910920001",
+        "7315072010680002",
+        "7315074311880001",
+        "7315075210940004",
+        "7315070309790002",
+        "7315077112402010",
+        "7315071311800004",
+        "7315075207830004",
+        "7315074305860005",
+        "7315111102030002",
+        "7315072711690001",
+        "6408110207590002",
+        "7315084904750003",
+        "7315065505780006",
+        "6474031605760004",
+        "6408111111830001",
+        "7315077112670134",
+        "7604061907980001",
+        "7315063112780137",
+        "7315074107700017",
+        "7315060101550002",
+        "7315077112690122",
+        "7315074410680001",
+        "7315071005050003",
+        "7315087112530061",
+        "7605061503820001",
+        "7604045803600010",
+        "7315070109790001",
+        "7315077112880130",
+        "7315070107540012",
+        "7315074708840004",
+        "7315047112720212",
+        "7315072302720003",
+        "7315072711450001",
+        "7315075007670002",
+        "7315075906980001",
+        "7315070303810002",
+        "7315075202930006",
+        "7315076212930004",
+        "7315070705770001",
+        "7315072307840002",
+        "7315071508770001",
+        "7604061409670002",
+        "7604061005660001",
+        "7315070107750010",
+        "7315120911830003",
+        "7315124911860002",
+        "7315075809760002",
+        "7315062812680001",
+        "6408110505900003",
+        "7311030409770003",
+        "7315075305920001",
+        "7315070107860010",
+        "7315075506650001",
+        "7315074509850003",
+        "7315076012760001",
+        "7315074710030006",
+        "7315071209620001",
+        "7315072309579001",
+        "7315070106800016",
+        "7315064705710004",
+        "7315075503680001",
+        "7315070506770002"
+      ],
+      "ALAMAT": [
+        "Cappalete,RT",
+        "Lambalumama ,RT",
+        "Kalosi,RT:001/RW:007 Kel",
+        "Pakeng,RT",
+        "Parappe,RT:000/RW:000 Desa",
+        "Kalosi,RT",
+        "Landas,RT:006/RW:001Kel/Desa",
+        "Dusun Bungi ,RT:005/RW:005 Desa",
+        "Kalosi,Kel",
+        "Salu kalobe,RT",
+        "Buttu sappa,RT:001/RW:001Kel",
+        "Salu sape Kel",
+        "Buttu tanre ,RT",
+        "Lambalumama,RT",
+        "Kampung Sungai Batang Batu 10 Jalan Labuk 90000 Sandakan Sabah 2",
+        "Talambung ,RT",
+        "Salu sape ,RT",
+        "Cappa lete,RT",
+        "Salu sape,RT:001/RW:003 Kel",
+        "Lamba lumama,RT:001/RW:005Kel",
+        "Dusun Silopo,RT:000/RW:000 Desa",
+        "Dusun Bajeng Kaluku,RT:001/RW:002Desa",
+        "Salu kalobe,RT:001/RW:001Kel",
+        "Kalosi ,RT",
+        "Saksi-saksi : 1",
+        "Pembangun,RT:001/RW:0001Kel",
+        "Salu sape,RT:002/RW:003 Kel",
+        "Bone ,RT",
+        "Salu sape,RT:001/RW:005Kel",
+        "Karawa,RT:001/RW:001 Kel",
+        "Guliling ,RT",
+        "Pambangun ,RT:001/RW:002 Kel",
+        "Karawa,RT:001RW:001 Kel",
+        "Salusape Kel",
+        "Tarokko,RT:000/RW:000 Desa",
+        "Lot 12 tkt bwh blk",
+        "Landas,Kel/Desa"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "23 April 2024"
+      ],
+      "LUAS": [
+        "300 m2",
+        "400 M2",
+        "360 M2",
+        "513 m2",
+        "982.5M2",
+        "294 m2",
+        "10.000 M2",
+        "312 m2",
+        "312 M2",
+        "260 M2",
+        "2.950 M2",
+        "1.300 M2",
+        "6.700 M2",
+        "4.984 m2",
+        "65 M2",
+        "510 M2",
+        "1.470 M2",
+        "2.696 M2",
+        "8.000 M2",
+        "300 M2",
+        "360 m2",
+        "23,87 M2",
+        "450 M2",
+        "2.696 m2",
+        "294 M2",
+        "2.500 m2",
+        "982.5 M2",
+        "150 M2",
+        "65 m2",
+        "4.984 M2",
+        "5.450 M2",
+        "513 M2",
+        "23,87 m2",
+        "1.470 m2",
+        "5.800 M2",
+        "2.500 M2",
+        "4.700 M2",
+        "150 m2",
+        "400 m2",
+        "1.190 M2",
+        "260 m2"
+      ],
+      "HARGA": [
+        "Rp. 60.000.000",
+        "Rp 40.000.000",
+        "Rp.30.000.000",
+        "Rp.50.000.000",
+        "Rp. 30.000",
+        "Rp. 35.000.000",
+        "Rp. 20.000.000",
+        "Rp.40.000.000",
+        "Rp. 40.000",
+        "Rp.40",
+        "Rp.50",
+        "Rp. 40.000.000",
+        "Rp. 45.000",
+        "Rp. 30.000.000",
+        "Rp. 65.000.000",
+        "Rp. 50.000.000",
+        "Rp. 75.000.000",
+        "Rp.45.000.000",
+        "Rp.40.000",
+        "Rp. 40",
+        "Rp. 28.000.000"
+      ]
+    },
+    "text_preview": "SURAT PENGANTAR Nomor : 16 / T.AH / LK-BS / IV / 2024 Selanjutnya disebut Pihak II (Pihak Kedua), Untuk Mendapatkan Akte Jual Beli / Akta Pembagian Hak Bersama / Akte Hibah yang Terletak di Pinduarang Lambalumama Lingkungan Buttu sappa Kelurahan Tadokkong, Dengan Luas : 3.982.5 M2,Bangunan seluas M2 NOP: 73.15.080.002. - .0 Tertulis atas Nama dengan Batas – Batas Sebagai Berikut : Tanah tersebut diatas tidak ada tuntutan / gugatan dari pihak lain dan tidak ada sengketa sampai surat keterangan in"
+  },
+  {
+    "source_file": "JUAL BELI TANAH MOHAMMADONG-BAHIRA BINTI BANNU TUPPU 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SUARNI Nik",
+        "KADANG",
+        "MOHAMMADONG",
+        "BAHIRA BINTI BANNU Tempat",
+        "SUARNI",
+        "Nik",
+        "BAHIRA BINTI BANNU",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7271021911920008",
+        "7315077112900031",
+        "7315074407730004",
+        "7271024601970006",
+        "7271025309710004",
+        "7271025010900009"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Desa Lantibung,RT:000/RW:000Desa",
+        "Tuppu,RT:002/RW:002 Kel"
+      ],
+      "PEKERJAAN": [
+        "Karyawan Honorer"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "14 Juli 2025"
+      ],
+      "LUAS": [
+        "4.000 M2",
+        "2.064 m2",
+        "2.046 M2",
+        "2.064 M2"
+      ],
+      "HARGA": [
+        "Rp. 70.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Empat Belas bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : MOHAMMADONG / 32 Thn Nik : 7271021911920008 T.T.L/Umur : Pinrang, 09 – 11 - 1992 Pekerjaan : Karyawan Honorer Alamat : Desa Lantibung,RT:000/RW:000Desa.Lantibung KecBangkurung Kab.Banggai Laut Prov.Sulawesi Tengah. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : BAHIRA BINTI BANNU / 52 Thn Nik : 7315074407730004 T.T.L/Umur : Tuppu , 04 – 07 "
+  },
+  {
+    "source_file": "JUAL BELI TANAH ABDUL LATIF LAWA - ALIMUDDIN SALUDADEKO2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "ABDUL LATIF LAWA",
+        "KADANG",
+        "ALIMUDDIN",
+        "PARIDA WALLANG Nik",
+        "PARIDA WALLANG",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7604160107710008",
+        "7315070506840001",
+        "7315077140620001",
+        "7315075308850003",
+        "7315071401620001",
+        "7604043112660149",
+        "7315075311760004",
+        "7408044606740004",
+        "7315064907690001",
+        "7315075709670002"
+      ],
+      "ALAMAT": [
+        "Salu dadeko,RT:001/RW:004 Kel",
+        "Salu dadako,RT",
+        "Salu dadeko,RT"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "19 Juni 2025"
+      ],
+      "LUAS": [
+        "358 m2",
+        "358 M2"
+      ],
+      "HARGA": [
+        "Rp. 40.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Kamis tanggal Sembilan belas bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : ABDUL LATIF LAWA / 63 Tahun Nik : 7315077140620001 T.T.L/Umur : Tuppu, 14 – 01 – 1962 Pekerjaan : Wiraswasta Alamat : Salu dadako,RT.001/RW.004Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : ALIMUDDIN,S.PD / 41 Tahun Nik : 7315070506840001 T.T.L/Umur : Tuppu, 05 – 06 – 1984 Pekerjaan : G"
+  },
+  {
+    "source_file": "JUAL BELI TANAH A BDUL LATIF LAWA-INDO KADANG SALU DADEKO 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "ABDUL LATIF LAWA",
+        "KADANG",
+        "INDO KADANG Tempat",
+        "PARIDA WALLANG Nik",
+        "Nik",
+        "PARIDA WALLANG",
+        "INDO KADANG",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7604160107710008",
+        "7315070506840001",
+        "7315077140620001",
+        "7315075308850003",
+        "6405026104800004",
+        "7604043112660149",
+        "7315075311760004",
+        "7315071401620001",
+        "7408044606740004",
+        "7315064907690001",
+        "7315075709670002"
+      ],
+      "ALAMAT": [
+        "Cappalete,RT",
+        "Saksi-saksi : 1",
+        "Salu dadako,RT",
+        "Cappalete,RT:-/RW:- Kel",
+        "Salu dadeko,RT:001/RW:004 Kel"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "24 Juli 2025"
+      ],
+      "LUAS": [
+        "120 m2",
+        "120 M2"
+      ],
+      "HARGA": [
+        "Rp. 30.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Kamis tanggal Dua Puluh Empat bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : ABDUL LATIF LAWA / 63 Tahun Nik : 7315077140620001 T.T.L/Umur : Tuppu, 14 – 01 – 1962 Pekerjaan : Wiraswasta Alamat : Salu dadako,RT.001/RW.004Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : INDO KADANG / 80 Tahun Nik : 7315070506840001 T.T.L/Umur : Buttu tanre, 31 – 12 – 1944 Pekerjaan"
+  },
+  {
+    "source_file": "JUAL BELI TANAH JANNI-SYAFRUDDIN CAPPALETE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "PAHIMA",
+        "KADANG",
+        "SYAFRUDDIN Tempat",
+        "PAHIMA Nik",
+        "Nik",
+        "JANNI",
+        "SYAFRUDDIN",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315074402690002",
+        "7315061911850003",
+        "7315070509690001",
+        "7315064102620002"
+      ],
+      "ALAMAT": [
+        "Massila,RT:001/RW:001Kel",
+        "Cappalete",
+        "Saksi-saksi : 1",
+        "Massila,RT:001/RW:003 Kel",
+        "Massila,RT:001/RW:001 Kel",
+        "Cappalete,RT:001/RW:005 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "04 Juli 2025"
+      ],
+      "LUAS": [
+        "75 M2",
+        "270 M2",
+        "230 m2",
+        "230 M2"
+      ],
+      "HARGA": [
+        "Rp. 40.000.000",
+        "Rp.40.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Empat bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : JANNI / 63 Thn Nik : 7315064102620002 T.T.L/Umur : Tuppu, 01 – 02 - 1962 Pekerjaan : Mengurus Rumah Tangga Alamat : Massila,RT:001/RW:003 Kel.Lampa Kec.Duampanua Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SYAFRUDDIN / 55 Thn Nik : 7315070509690001 T.T.L/Umur : Cappalete , 05 – 09 - 1969 Pekerjaan : Wiraswast"
+  },
+  {
+    "source_file": "JUAL BELI TANAH DARMI-HANA Lambalumama 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "Nik",
+        "DARMI",
+        "HANA",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315076109870001",
+        "7315074506780001",
+        "7315074106760003",
+        "7315074604810003",
+        "7315076611730001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Pambangun,RT:001/RW:006 Kel",
+        "Pambangun,RT:001/RW:005 Kel",
+        "Lambalumama ,RT"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "23 Juni 2025"
+      ],
+      "LUAS": [
+        "3.900 M2",
+        "3.900 m2",
+        "6.700 M2"
+      ],
+      "HARGA": [
+        "Rp. 80.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Dua Puluh Tiga bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : DARMI / 51 Thn Nik : 7315076611730001 T.T.L/Umur : Pambangun , 26 – 11 – 1973 Pekerjaan : Mengurus Rumah Tangga Alamat : Pambangun,RT:001/RW:006 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : HANA / 37 Thn Nik : 7315076109870001 T.T.L/Umur : Lambalumama, 21 - 09 - 1987 Pekerjaa"
+  },
+  {
+    "source_file": "AJB SULHANA-ABD.LATIF SALUKALOBE2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "MUSTAMIN HONDA",
+        "RIMAN BINTI SAMAN IC",
+        "MUSTAMIN HONDA Nik",
+        "ABD.LATIF",
+        "SULHANA",
+        "SULHANA Tempat",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315071504750002",
+        "7315070707720009",
+        "7315077012740002"
+      ],
+      "ALAMAT": [
+        "Salu kalobe,RT:001/RW:001 Kel",
+        "Salu dadeko",
+        "Salu dadeko,RT:001/RW:004 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "25 Agustus 2025",
+        "22 September 2025",
+        "23 September 2025"
+      ],
+      "LUAS": [
+        "612 M2",
+        "612M2"
+      ],
+      "HARGA": [
+        "Rp. 75.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Dua Puluh Dua bulan September tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SULHANA / 50 Thn Nik : 7315077012740002 T.T.L/Umur : Lajoro , 30 – 12 - 1974 Pekerjaan : Mengurus Rumah Tangga Alamat : Salu dadeko,RT:001/RW:004 Kel.Tadokkong Kec. Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : ABD.LATIF / 50 Thn Nik : 7315071504750002 T.T.L/Umur : Enrekang , 15– 04 - 1975 Pekerjaan : Wiras"
+  },
+  {
+    "source_file": "JUAL BELI TANAH KADIR- NURLIANTI SALUSAPE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "KADIR",
+        "SYAMSUL ALAM RAMLI",
+        "NURLIANTI BIN TASWIN",
+        "AKKAS",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315074509040003",
+        "7315076801960003",
+        "7315041709710001",
+        "7315074701060004",
+        "7315073012770008",
+        "7315074707980004",
+        "7315074811020007",
+        "7315070308790002"
+      ],
+      "ALAMAT": [
+        "Salu sape,RT: 001/RW: 003 Kel",
+        "Salusape,RT: 001/RW: 003 Kel",
+        "Jln Cekdam",
+        "Perumahan Griya Lerang lerang Indah Blok"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "29 Aprili 2025",
+        "1 Tahun 2024",
+        "29 April 2025"
+      ],
+      "LUAS": [
+        "168 M2",
+        "280 M2",
+        "280 m2",
+        "200 M2",
+        "60 m2",
+        "60 M2"
+      ],
+      "HARGA": [
+        "Rp. 40.000.000",
+        "Rp. 40"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Tiga bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : KADIR / 47 Thn Nik : 7315073012770008 T.T.L/Umur : Cappalete , 30 – 12 - 1977 Pekerjaan : Petani/Pekebun Alamat : Salusape,RT: 001/RW: 003 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sul-Sul. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : NURLIANTI BIN TASWIN / 26 Thn Nik : 7315076801960003 T.T.L/Umur : Salu sape, 28 – 01 - 1996 Pekerjaan : Mengur"
+  },
+  {
+    "source_file": "JUAL BELI TANAH TANAH SUHADA - RUSTAM CAPPALETE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "RUSTAM",
+        "KADANG",
+        "RUSTAM Tempat",
+        "SUHADA LAHADI",
+        "SUHADA LAHDI",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315074707770014",
+        "7315071203670006",
+        "7315070911820007"
+      ],
+      "ALAMAT": [
+        "Cappalete",
+        "Saksi-saksi : 1",
+        "Salu sape,RT:001/RW:003 Kel",
+        "Salu sap,RT:001/RW:003Kel",
+        "Cappalete,RT:001/RW:005 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "07 Juli 2025"
+      ],
+      "LUAS": [
+        "220 M2",
+        "220 m2"
+      ],
+      "HARGA": [
+        "Rp. 40.000.000",
+        "Rp.40.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Tujuh bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SUHADA LAHADI / 48 Thn Nik : 7315074707770014 T.T.L/Umur : Tuppu, 07 – 07 - 1977 Pekerjaan : Mengurus Rumah Tangga Alamat : Salu sape,RT:001/RW:003 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : RUSTAM / 58 Thn Nik : 7315071203670006 T.T.L/Umur : Barru , 12 – 03 - 1967 Pekerjaan : Wiras"
+  },
+  {
+    "source_file": "Jual Beli Akmal Junedi - Mura Salukalobe.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "ICAL",
+        "Nik",
+        "MUH SALEH",
+        "MURA",
+        "ICAL Nik",
+        "AKMAL JUNEDI Tempat",
+        "AKMAL JUNEDI",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "9271060302070002",
+        "7315063112650002",
+        "9271062007590001",
+        "7315070107840009",
+        "9271064709710001",
+        "9271062604020001",
+        "9271060810050001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Bajeng Kaluku,RT: 001/RW: 001 Desa",
+        "Salukalobe",
+        "Dusun Bungi"
+      ],
+      "PEKERJAAN": [
+        "Belum/Belum Bekerja"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "03 Januari 2025"
+      ],
+      "LUAS": [
+        "5.900 m2",
+        "5.900 M2"
+      ],
+      "HARGA": [
+        "Rp.70.000.000",
+        "Rp.170",
+        "Rp. 70.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Tiga bulan Januari tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : AKMAL JUNEDI / 23 Thn Nik : 9271062604020001 T.T.L/Umur : Bungi, 26 – 04 - 2001 Pekerjaan : Belum/Belum Bekerja Alamat : Jl.A.Yani,RT:010/RW:000 Kel/Desa.Muara Jawa Ulu Kec.Muara Jawa Kab.Kutai Kartanegara Prov.Kalimantan Timur. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MURA / 40 Thn Nik : 7315070107840009 T.T.L/Umur : Salukalobe , 01 – 07"
+  },
+  {
+    "source_file": "HIBAH TANAH MASNIA KALOSI 2024.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "HANA",
+        "LEPU",
+        "ANI",
+        "ANI Nik",
+        "Dua Puluh Empat kami",
+        "MASNIA",
+        "HANA Nik"
+      ],
+      "NIK": [
+        "7315074606790004",
+        "7315075511900002",
+        "7601024710730001",
+        "7315074309750003"
+      ],
+      "ALAMAT": [
+        "Kalosi,RT: 001/RW: 007Kel",
+        "Kalosi,RT: 001/RW: 007 Kel",
+        "Kalosi,RT",
+        "Kalosi,RT:001/RW:007 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "18 November 2024"
+      ],
+      "LUAS": [
+        "2.800 M2",
+        "120 M2",
+        "2.800 m2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT PERJANJIAN HIBAH TANAH Pada hari ini Senin tanggal Delapan Belas bulan November tahun Dua Ribu Dua Puluh Empat kami yang bertandatangan di bawah ini: Nama : LEPU / 66 Thn Nik : 731507041270001 T.T.L/Umur : Kalosi , 04 – 12 - 1957 Pekerjaan : Petani/Pekebun Alamat : Kalosi,RT: 001/RW: 007 Kel.Tadokkkong Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MASNIA / 49 Thn Nik : 7315074309750003 T.T.L/Umur : Kalosi , 09 - 09 -1975 Pekerjaan : Mengurus Rumah Tangg"
+  },
+  {
+    "source_file": "AHLI WARIS TANAH HADRA PEMBANGUN.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "HADRA",
+        "Almarhumah Naira",
+        "CINDAR",
+        "DARMI"
+      ],
+      "NIK": [
+        "7315074106760003",
+        "7315076611730001",
+        "7315074604810003",
+        "7315074506780001"
+      ],
+      "ALAMAT": [],
+      "PEKERJAAN": [],
+      "JABATAN": [
+        "kelengkapan berkas Pengurusan Akte Jual Beli"
+      ],
+      "TGL": [
+        "02 Desember 2024"
+      ],
+      "LUAS": [],
+      "HARGA": []
+    },
+    "text_preview": "SURAT KETERANGAN AHLI WARIS Kami yang bertanda tangan dibawah ini masing-masing Ahli Waris dari Almarhum Majida yang menyatakan dengan sesungguhnya dan sanggup diangkat sumpah, bahwa Almarhum Majida bertempat tinggal terakhir di Pambangun Kel.Tadokkong Kec.Lembang Kabupaten Pinrang Provinsi Sulawesi Selatan yang telah meninggal dunia pada Tanggal 27 – 08 -2021 berdasarkan Surat Keterangan Meninggal Dunia Nomor: 468.3/78/KT-LB/XII/2024 dan dikebumikan di pekuburan Pambangun, Almarhumah Majida tel"
+  },
+  {
+    "source_file": "JUAL BELI TANAH BUSTAMI - GAZALI,S.M TUPPU 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "GAZALI",
+        "Nik",
+        "ABDUL AZIZ",
+        "Dua Puluh Lima kami",
+        "SURIANI Tempat"
+      ],
+      "NIK": [
+        "7315040305900001",
+        "7315067112620015",
+        "7315061205590001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Dusun Bajeng kaluku,RT: 001/RW: 001 Desa",
+        "Dusun Susbater,RT: -/RW: - Desa"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "22 Juli 2025",
+        "22 Juni 2025"
+      ],
+      "LUAS": [
+        "5.394 M2"
+      ],
+      "HARGA": [
+        "Rp. 60.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Dua Puluh Dua bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : / Thn Nik : 7315061205590001 T.T.L/Umur : Bungi , 12 – 05 - 1969 Pekerjaan : Wiraswasta Alamat : Dusun Bajeng kaluku,RT: 001/RW: 001 Desa.Bungi Kec.Duampanua Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : GAZALI,S.M / 35 Thn Nik : 7315040305900001 T.T.L/Umur : Tuppu , 05– 03 - 1990 Pekerjaan : Karyawan Swasta Al"
+  },
+  {
+    "source_file": "JUAL BELI MUNIR MUSA TUPPU.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "MUNIR MUSA",
+        "DARMAWATI",
+        "Dua Puluh Empat kami"
+      ],
+      "NIK": [
+        "7315070902840001",
+        "7315070905800001",
+        "7315070605930004",
+        "7315077012540015",
+        "7315077112650053",
+        "7315072005770001",
+        "7315072907890001",
+        "7315077112550078",
+        "7315075011730007"
+      ],
+      "ALAMAT": [
+        "Pajalele,RT: 001/RW: 003 Desa"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "10 Desember 2024",
+        "1 Tahun 2024"
+      ],
+      "LUAS": [
+        "387 m2",
+        "2.100 M2",
+        "387 M2"
+      ],
+      "HARGA": [
+        "Rp. 55.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Sepuluh bulan Desember tahun Dua Ribu Dua Puluh Empat kami yang bertandatangan di bawah ini: Nama : DARMAWATI / 51 Thn Nik : 7315075011730007 T.T.L/Umur : Pajalele , 10 – 11 - 1973 Pekerjaan : Wiraswasta Alamat : Pajalele,RT: 001/RW: 003 Desa.Binanga Karaeng Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MUNIR MUSA / 31 Thn Nik : 7315070605930004 T.T.L/Umur : Tuppu , 06 – 05 - 1993 Pekerjaan : Belum"
+  },
+  {
+    "source_file": "JUAL BELI TANAH Hj ST SANARA - Hj.MINI TUPPU2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "Hj. ST SANARAH",
+        "RUSMINI",
+        "KADANG",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315077112780048",
+        "7315076006700006",
+        "7601027112600044",
+        "7372026707910003"
+      ],
+      "ALAMAT": [
+        "Silopo,RT: 000/RW: 000 Desa"
+      ],
+      "PEKERJAAN": [
+        "PNS"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "1 Tahun 2024",
+        "05 Februari 2025"
+      ],
+      "LUAS": [
+        "360 M2"
+      ],
+      "HARGA": [
+        "Rp. 65.000.000",
+        "Rp. 65"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Lima bulan Februari tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : Hj. ST SANARAH / 64 Thn Nik : 7601027112600044 T.T.L/Umur : Tuppu , 31 – 12 - 1960 Pekerjaan : PNS Alamat : Silopo,RT: 000/RW: 000 Desa.Mirring Kec.Binuang Kab.Polewali Mandar Prov.Sul-Bar. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : RUSMINI,S.AP / 54 Thn Nik : 7315076006700006 T.T.L/Umur : Tuppu , 20 – 06 - 1978 Pekerjaan : PNS Alamat : Tup"
+  },
+  {
+    "source_file": "Himbauan Menjelang Tahun Baru 2025.docx",
+    "extracted_entities": {
+      "NAMA": [],
+      "NIK": [],
+      "ALAMAT": [],
+      "PEKERJAAN": [],
+      "JABATAN": [],
+      "TGL": [
+        "27 Desember 2024"
+      ],
+      "LUAS": [],
+      "HARGA": []
+    },
+    "text_preview": "PEMERINTAH KABUPATEN PINRANG KECAMATAN LEMBANG KELURAHAN TADOKKONG Jalan Poros pinrang Polman Tuppu Kode Pos 91254 HIMBAUAN Nomor : 57 /KT-LB/ XII / 2024 Dalam rangkai menjelang Pergantian Tahun 2024-2025 ( Tahun Baru 2025 ) maka disampaikan kepada seluruh masyarakat agar mengisi Penyambutan tahun baru dngan Kegiatan-Kegiatan Keagamaan,olehnya itu diharapkan kepada seluruh warga / Masyarakat Kelurahan Tadokkong memperhatikan hal-hal sebagai berikut : 1.Dilarang melakukan pesta Alkohol/Miniman Ke"
+  },
+  {
+    "source_file": "HIBAH TANAH MUSTIKA TUPPU 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "MIA",
+        "KADANG",
+        "MARDANA",
+        "MARDANA Nik",
+        "MUSTIKA",
+        "HJ ST SANARAH",
+        "UMAR TAPA Nik",
+        "UMAR TAPA",
+        "SYAMSINAR",
+        "HJ ST SANARAH Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315077112780048",
+        "7315073009760001",
+        "7372024611870002",
+        "7315072204930002",
+        "6473010112600001",
+        "7315077012760004",
+        "7604021412810002",
+        "7315074505660003",
+        "7315074808900004",
+        "7315076510980001",
+        "7315077112580045",
+        "7372025405860001",
+        "7315076804960002"
+      ],
+      "ALAMAT": [
+        "Tuppu,RT: 000/RW: 000 Kel",
+        "Silopo,RT:000/RW:000Desa",
+        "Bombong Lambe",
+        "Tuppu,RT: 002/RW: 002 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "28 Mei 2025"
+      ],
+      "LUAS": [
+        "369 M2",
+        "369 m2",
+        "3.500 M2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT PERJANJIAN HIBAH TANAH Pada hari ini Rabu tanggal Dua Puluh Delapan bulan Mei tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : MIA / 59 Thn Nik : 7315074505660003 T.T.L/Umur : Tuppu , 05 – 05 - 1966 Pekerjaan : Mengurus Rumah Tangga Alamat : Tuppu,RT: 000/RW: 000 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MUSTIKA / 29 Thn Nik : 73711476692960002 T.T.L/Umur : Tuppu , 26 - 02 -1996 Pekerjaan : ASN Alamat : Tuppu"
+  },
+  {
+    "source_file": "HIBAH TANAH SURIANTI-HASNA SALUKALOBE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "HASNA",
+        "SURIANTI",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315070112910006",
+        "7315077112790162",
+        "7315075607830005"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Salukalobe,RT",
+        "Salopi,RT: 002/RW: 001 Desa"
+      ],
+      "PEKERJAAN": [
+        "Belum/Tidak Bekerja"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "13 Juni 2025"
+      ],
+      "LUAS": [
+        "490 M2",
+        "1.800 M2",
+        "490 m2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT PERJANJIAN HIBAH TANAH Pada hari ini Jumat tanggal Tiga Belas bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SURIANTI / 41 Thn Nik : 7315075607830005 T.T.L/Umur : Salopi , 16 – 07 - 1983 Pekerjaan : Belum/Tidak Bekerja Alamat : Salopi,RT: 002/RW: 001 Desa.Binanga karaeng Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : HASNA / 45 Thn Nik : 7315077112790162 T.T.L/Umur : Salukalobe , 31 - 12 -1979 Pekerjaan : Mengurus "
+  },
+  {
+    "source_file": "JUAL BELI TANAH H.KUSNADI-MUH.ASRI CAPPALETE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "MUHAMMAD AKIB Nik",
+        "MUH.ASRI Tempat",
+        "MUH.ASRI",
+        "HJ.NURAENI S.S.PD Nik",
+        "H.KUSNADI",
+        "Dua Puluh Lima kami",
+        "MUHAMMAD AKIB"
+      ],
+      "NIK": [
+        "7315071805680001",
+        "7315077112560025",
+        "7315073112820224",
+        "7315073012680011",
+        "7315074507790003",
+        "7315071906950001",
+        "7315074506680002",
+        "7315070708660002"
+      ],
+      "ALAMAT": [
+        "Cappalete",
+        "Tuncung,RT:001/RW:001Desa",
+        "Cappalete,RT:002/RW:005 Kel"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "15 Juli 2025"
+      ],
+      "LUAS": [
+        "316 M2",
+        "2.360 M2",
+        "316 m2"
+      ],
+      "HARGA": [
+        "Rp.45.000.000",
+        "Rp. 45.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Lima Belas bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : H.KUSNADI / Thn Nik : 7315070708660002 T.T.L/Umur : Tuppu, 07 – 08 - 1966 Pekerjaan : Wiraswasta Alamat : Tuncung,RT:001/RW:001Desa.Binanga karaeng Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MUH.ASRI / Thn Nik : 7315073112820224 T.T.L/Umur : Lambalumama , 25 – 08 - 1983 Pekerjaan : Wiraswas"
+  },
+  {
+    "source_file": "JUAL BELI TANAH ABDUL AZIS - SURIANI SALUKALOBE 2015.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "AMIR",
+        "Nik",
+        "Dua Puluh Lima kami",
+        "SURIANI",
+        "ABDUL AZIZ",
+        "AMIR Nik",
+        "SURIANI Tempat"
+      ],
+      "NIK": [
+        "7315067112710159",
+        "7315060205686004",
+        "7315065703870001",
+        "7315061205590001",
+        "7315067112620015"
+      ],
+      "ALAMAT": [
+        "Bungi Desa",
+        "Dusun Bajeng kaluku,RT: 001/RW: 001 Desa",
+        "Dusun Susbater,RT: -/RW: - Desa",
+        "Saksi-saksi : 1"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "22 Juli 2025",
+        "22 Juni 2025"
+      ],
+      "LUAS": [
+        "5.394 M2"
+      ],
+      "HARGA": [
+        "Rp. 60.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Dua Puluh Dua bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : ABDUL AZIZ / 56 Thn Nik : 7315061205590001 T.T.L/Umur : Bungi , 12 – 05 - 1969 Pekerjaan : Wiraswasta Alamat : Dusun Bajeng kaluku,RT: 001/RW: 001 Desa.Bungi Kec.Duampanua Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SURIANI / 53 Thn Nik : 7315067112710159 T.T.L/Umur : Bungi , 31– 12 - 1971 Pekerjaan : Menguru"
+  },
+  {
+    "source_file": "JUAL BELI TANAH MOHAMMADONG-SALMIATI TUPPU 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "MOHAMMADONG",
+        "SALMIATI",
+        "SUARNI",
+        "Nik",
+        "SALMIATI Tempat",
+        "SUARNI Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7271021911920008",
+        "7315077112900031",
+        "7271024601970006",
+        "7271025309710004",
+        "7315076212980003",
+        "7271025010900009"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Desa Lantibung,RT:000/RW:000Desa",
+        "Tuppu,RT:002/RW:002 Kel"
+      ],
+      "PEKERJAAN": [
+        "Karyawan Honorer"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "14 Juli 2025"
+      ],
+      "LUAS": [
+        "4.000 M2",
+        "2.064 m2",
+        "2.064 M2"
+      ],
+      "HARGA": [
+        "Rp. 70.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Empat Belas bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : MOHAMMADONG / 32 Thn Nik : 7271021911920008 T.T.L/Umur : Pinrang, 09 – 11 - 1992 Pekerjaan : Karyawan Honorer Alamat : Desa Lantibung,RT:000/RW:000Desa.Lantibung KecBangkurung Kab.Banggai Laut Prov.Sulawesi Tengah. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SALMIATI / 26 Thn Nik : 7315076212980003 T.T.L/Umur : Tuppu , 22 – 12 - 1998 Pek"
+  },
+  {
+    "source_file": "AJB La bali.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "HADRA",
+        "AYUANDIRA",
+        "KADANG",
+        "HERNA BASRI",
+        "LABALI",
+        "Nik",
+        "AYUANDIRA Nik",
+        "HADRA Tempat",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315074106760003",
+        "7315073121620030",
+        "7315064205940004",
+        "7315074810940002",
+        "7315070506770002"
+      ],
+      "ALAMAT": [
+        "Bj Kaluku ,RT",
+        "Saksi-saksi : 1",
+        "Pambangun,Kel",
+        "Cappalete,RT:001/RW:005 Kel",
+        "Pambangun,RT:002/RW:006 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "02 Desember 2024",
+        "02 Deseber 2024"
+      ],
+      "LUAS": [
+        "1.900 M2",
+        "3.732 M2",
+        "6.000 M2",
+        "1.900 m2"
+      ],
+      "HARGA": [
+        "Rp. 65.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Dua Puluh bulan Agustus tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : LABALI / 62 Thn Nik : 7315073121620030 T.T.L/Umur : Lambalumama , 31 – 12 – 1962 Pekerjaan : Petani/Pekebun Alamat : Cappalete,RT:001/RW:005 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : HERNA BASRI / 31 Thn Nik : 7315064205940004 T.T.L/Umur : Malaysia, 02 - 05 - 1994 Pekerjaan :"
+  },
+  {
+    "source_file": "JUAL BELI  NASRUDDIN-SAHARUDDIN SALUKALOBE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "AKMAL JUNEDI",
+        "MURA",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "9271062007590001",
+        "9271064709710001",
+        "7315070107840009",
+        "9271060302070002"
+      ],
+      "ALAMAT": [
+        "Salukalobe"
+      ],
+      "PEKERJAAN": [
+        "Belum/Belum Bekerja"
+      ],
+      "JABATAN": [],
+      "TGL": [],
+      "LUAS": [
+        "5.900 M2"
+      ],
+      "HARGA": [
+        "Rp.70.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Tujuh Belas bulan Januari tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : AKMAL JUNEDI / 23 Thn ` T.T.L/Umur : Bungi, 26 – 04 - 2001 Pekerjaan : Belum/Belum Bekerja Alamat : Jl.A.Yani,RT:010/RW:000 Kel/Desa.Muara Jawa Ulu Kec.Muara Jawa Kab.Kutai Kartanegara Prov.Kalimantan Timur. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MURA / 40 Thn Nik : 7315070107840009 T.T.L/Umur : Salukalobe , 01 – 07 - 1984 Pekerj"
+  },
+  {
+    "source_file": "HUKUM PERBANKAN SYARIAH.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "NUR AQILAH BASRI NIM"
+      ],
+      "NIK": [],
+      "ALAMAT": [],
+      "PEKERJAAN": [
+        "mana telah diubah"
+      ],
+      "JABATAN": [
+        "khalifah",
+        "jaminan kredit"
+      ],
+      "TGL": [
+        "10 Tahun 1998",
+        "21 Tahun 2008",
+        "7 Tahun 1992"
+      ],
+      "LUAS": [],
+      "HARGA": []
+    },
+    "text_preview": "TUGAS FINAL HUKUM PERBANKAN SYARIAH NAMA : NUR AQILAH BASRI NIM : 11000117062 KELAS : HUKUM EKONOMI SYARIAH B RESUME KELOMPOK 1 SEJARAH PERBANKAN SYARIAH Pengertian Bank Syariah Secara umum pengertian Bank Islam (Islamic Bank) adalah bank yang pengoperasiannya disesuaikan dengan prinsip syariat Islam. Saat ini banyak istilah yang diberikan untuk menyebut entitas Bank Islam selain istilah Bank Islam itu sendiri, yakni Bank Tanpa Bunga (Interest-Free Bank), Bank Tanpa Riba (Lariba Bank), dan Bank "
+  },
+  {
+    "source_file": "JUAL BELI HADRA-INA LABALUMAMA.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "HADRA",
+        "AYUANDIRA",
+        "KADANG",
+        "INA",
+        "Nik",
+        "Dua Puluh Empat kami",
+        "AYUANDIRA Nik",
+        "HADRA Tempat"
+      ],
+      "NIK": [
+        "7315075508910002",
+        "7315074810940002",
+        "7315074506780001",
+        "7315074106760003",
+        "7315074604810003",
+        "7315076611730001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Pambangun,Kel",
+        "Kapung Baru ,RT",
+        "Pambangun,RT:002/RW:006 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "02 Desember 2024",
+        "02 Deseber 2024"
+      ],
+      "LUAS": [
+        "1.900 m2",
+        "1.900 M2",
+        "6.700 M2"
+      ],
+      "HARGA": [
+        "Rp. 70.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Dua bulan Desember tahun Dua Ribu Dua Puluh Empat kami yang bertandatangan di bawah ini: Nama : HADRA / 48 Thn Nik : 7315074106760003 T.T.L/Umur : Pambangun , 01 – 06 – 1976 Pekerjaan : Mengurus Rumah Tangga Alamat : Pambangun,RT:002/RW:006 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : INA / 33 Thn Nik : 7315075508910002 T.T.L/Umur : Kapung Baru, 15 - 08 - 1991 Pekerjaan : Men"
+  },
+  {
+    "source_file": "AJB BADULLAH-NASRI TUPPU2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "NASRI",
+        "BADULLAH",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "9104072906010002",
+        "9104070204570001",
+        "7315071706680001",
+        "7315076710810001",
+        "7315072106750001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Tuppu,RT: 002/RW: 002 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "1 Tahun 2024",
+        "26 September 2025"
+      ],
+      "LUAS": [
+        "3.800 M2",
+        "2.800 M2",
+        "387 M2",
+        "2.800 m2"
+      ],
+      "HARGA": [
+        "Rp. 30.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Dua Puluh Enam bulan September tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : BADULLAH / 68 Thn Nik : 9104070204570001 T.T.L/Umur : Pinrang , 02 – 04 - 1957 Pekerjaan : Petani/Pekebun Alamat : Jl.Sarera,RT: 014/RW: 004 Kel/Desa.Bumi Mulia Kec.Wanggar Kab.Nabire Prov.Papua. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : NASRI / 50 Thn Nik : 7315072106750001 T.T.L/Umur : Kalosi , 21 – 06 - 1975 Pekerjaan : Peta"
+  },
+  {
+    "source_file": "HIBAH TANAH KADIR-NURLIANTI SALUSAPE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "KADIR",
+        "Nik",
+        "NURLIANTI BIN TASWIN",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315074509040003",
+        "7315076801960003",
+        "7315074701060004",
+        "7315073012770008",
+        "7315074707980004",
+        "7315074811020007"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Salu sape,RT: 001/RW: 003 Kel",
+        "Salu sape,RT"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "03 Juni 2025"
+      ],
+      "LUAS": [
+        "168 M2",
+        "100 M2",
+        "100 m2",
+        "60 m2",
+        "60 M2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT PERJANJIAN HIBAH TANAH Pada hari ini Selasa tanggal Tiga bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : KADIR / 47 Thn Nik : 7315073012770008 T.T.L/Umur : Cappalete , 30 – 12 - 1977 Pekerjaan : Petani/Pekebun Alamat : Salu sape,RT: 001/RW: 003 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : NURLIANTI BIN TASWIN / 29 Thn Nik : 7315076801960003 T.T.L/Umur : Salu sape , 28 - 01 -1996 Pekerjaan : Mengurus "
+  },
+  {
+    "source_file": "JUAL BELI SAKKA-DAYA KALOSI2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SUBURI",
+        "KADANG",
+        "SAKKA",
+        "DAYA",
+        "SUBURI Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315072001620001",
+        "7315073112790056",
+        "7315075302800002",
+        "7315071507420001",
+        "7315071501740003"
+      ],
+      "ALAMAT": [
+        "Kalosi,RT",
+        "Kalosi ,RT",
+        "Kalosi,RT:001/RW:007 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "29 Oktober 2025"
+      ],
+      "LUAS": [
+        "65 M2",
+        "195 M2"
+      ],
+      "HARGA": [
+        "Rp.55.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Dua Puluh Sembilan bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SAKKA / 83 Thn Nik : 7315071507420001 T.T.L/Umur : Kalosi , 15 – 07 – 1942 Pekerjaan : Petani/Pekebun Alamat : Kalosi,RT:001/RW:007 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : DAYA / 45 Thn Nik : 7315075302800002 T.T.L/Umur : Karawa, 13 - 02 - 1980 Pekerjaan : Mengurus"
+  },
+  {
+    "source_file": "JUAL BELI Hj ST SANARAH-NOVITA SARI  Tuppu 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "Hj. ST SANARAH",
+        "KADANG",
+        "NOVITA SARI.A",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7371147004670002",
+        "7601027112600044",
+        "7315074106960003"
+      ],
+      "ALAMAT": [
+        "Silopo,RT: 000/RW: 000 Desa",
+        "Tuppu,RT: 002/RW: 002 Ke"
+      ],
+      "PEKERJAAN": [
+        "PNS"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "1 Tahun 2024",
+        "27 Mei 2025"
+      ],
+      "LUAS": [
+        "371 m2",
+        "371 M2"
+      ],
+      "HARGA": [
+        "Rp. 65.000.000",
+        "Rp. 65"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Dua Puluh Tujuh bulan Mei tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : Hj. ST SANARAH / 64 Thn Nik : 7601027112600044 T.T.L/Umur : Tuppu , 31 – 12 - 1960 Pekerjaan : PNS Alamat : Silopo,RT: 000/RW: 000 Desa.Mirring Kec.Binuang Kab.Polewali Mandar Prov.Sul-Bar. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : NOVITA SARI.A / 25 Thn Nik : 7315074106960003 T.T.L/Umur : Salukalobe , 01 – 06 - 1996 Pekerjaan : Me"
+  },
+  {
+    "source_file": "AJB MUHAMMAD-MARSANA SALUKALOBE2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "MARSANA",
+        "KADANG",
+        "MUHAMMAD",
+        "MARSANA Tempat",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315075905710001",
+        "7315074507780004",
+        "7315070202470004",
+        "6405027112620040"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : Tuppu, 01 Oktober 2025",
+        "Salu kalobe,RT: 002/RW: 001 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "01 Oktober 2025"
+      ],
+      "LUAS": [
+        "264 M2",
+        "1.000 M2",
+        "60 M2",
+        "264 m2"
+      ],
+      "HARGA": [
+        "Rp. 60.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Satu bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : MUHAMMAD / 78 Thn Nik : 7315070202470004 T.T.L/Umur : Pinrang , 02 – 02 - 1947 Pekerjaan : Petani/Pekebun Alamat : Salu kalobe,RT: 002/RW: 001 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MARSANA / 62 Thn Nik : 6405027112620040 T.T.L/Umur : Pinrang , 31 – 12 - 1962 Pekerjaan : Menguru"
+  },
+  {
+    "source_file": "JUAL BELI TANAH IRNAWATI - HASRIADI TUPPU 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "HASRIADI Tempat",
+        "KADANG",
+        "SULTAN SILIWANGI Nik",
+        "RASMAWATI Nik",
+        "HASRIADI",
+        "SULTAN SILIWANGI",
+        "Ampi",
+        "RASMAWATI",
+        "IRNAWATI",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7602015407760003",
+        "7602010304730004",
+        "7315046606700003",
+        "7315070207930002"
+      ],
+      "ALAMAT": [
+        "Kanipang,RT:005/RW:006 Desa",
+        "Kajuangin",
+        "Jl Domba",
+        "Jl Domba RT:005/RW:005 Kel/Desa",
+        "BTN Ampi,RT:-/RW:- Kel/Desa"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "18 Juni 2025"
+      ],
+      "LUAS": [
+        "570 m2",
+        "570 M2"
+      ],
+      "HARGA": [
+        "Rp.45.000.000",
+        "Rp. 45.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Delapan Belas bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : IRNAWATI / 48 Thn Nik : 7602015407760003 T.T.L/Umur : Pinrang, 14 – 07 - 1976 Pekerjaan : Mengurus Rumah Tangga Alamat : BTN Ampi,RT:-/RW:- Kel/Desa.Karema Kec.Mamuju Kab.Mamuju Prov.Sulawesi Barat. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : HASRIADI / 31 Thn Nik : 7315070207930002 T.T.L/Umur : Pinrang , 02 – 07 - 1993 Pekerjaan : Pela"
+  },
+  {
+    "source_file": "AHLI WARIS TANAH YASIN DUPPA CAPPALETE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "AMIRUDDIN",
+        "HJ.BAHARA"
+      ],
+      "NIK": [
+        "7315071805680001",
+        "7315077112560025",
+        "7315073012680011",
+        "7315074507790003",
+        "7315070708660002"
+      ],
+      "ALAMAT": [],
+      "PEKERJAAN": [
+        "kelengkapan berkas Pengurusan Akte Jual Beli Tanah"
+      ],
+      "JABATAN": [],
+      "TGL": [
+        "15 Juli 2025"
+      ],
+      "LUAS": [
+        "2.360M2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT KETERANGAN AHLI WARIS Kami yang bertanda tangan dibawah ini masing-masing Ahli Waris dari Almarhum MUH.YASIN DUPPA yang menyatakan dengan sesungguhnya dan sanggup diangkat sumpah, bahwa Almarhum MUH.YASIN DUPPA bertempat tinggal terakhir di Buttu sappa Kel.Tadokkong Kecamatan Lembang Kabupaten Pinrang Provinsi Sulawesi Selatan, yang telah meninggal dunia pada Tanggal 09 – 03 - 2016 berdasarkan No.Kematian Kel.Tadokkong Nomor: 39 /KT-LB/VII/2025,semasa hidupnya telah menikah dengan Istrinya"
+  },
+  {
+    "source_file": "JUAL BELI TANAH BUNGA GANGKA-RAHIMA RAHMAN CAPPALETE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "BUNGA",
+        "BUNGA GANGKA",
+        "SANO",
+        "Nik",
+        "RAHIMA RAHMAN Tempat",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315071605500001",
+        "7315074506700002",
+        "7315071212740011",
+        "7315075010870009"
+      ],
+      "ALAMAT": [
+        "Salu sape,RT:002/RW:005Kel",
+        "Cappalete",
+        "Saksi-saksi : 1",
+        "Cappalete,RT:001/RW:005Kel",
+        "Lamba lumama,RT:002/RW:005Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "08 Juli 2025"
+      ],
+      "LUAS": [
+        "286 M2",
+        "345 M2",
+        "70 M2",
+        "345 m2"
+      ],
+      "HARGA": [
+        "Rp.45.000.000",
+        "Rp. 45.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Delapan bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : BUNGA / 55 Thn Nik : 7315074506700002 T.T.L/Umur : Rantoni, 05 – 06 - 1970 Pekerjaan : Mengurus Rumah Tangga Alamat : Salu sape,RT:002/RW:005Kel.Tadokkong Kec.LembangKab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SANO / 75 Thn Nik : 7315071605500001 T.T.L/Umur : Lombo , 16 – 05 - 1950 Pekerjaan : Petani/Pekeb"
+  },
+  {
+    "source_file": "Himbauan Kebakaran 2023.docx",
+    "extracted_entities": {
+      "NAMA": [],
+      "NIK": [],
+      "ALAMAT": [],
+      "PEKERJAAN": [],
+      "JABATAN": [],
+      "TGL": [],
+      "LUAS": [],
+      "HARGA": []
+    },
+    "text_preview": "PEMERINTAH KABUPATEN PINRANG KECAMATAN LEMBANG KELURAHAN TADOKKONG Jalan Poros Pinrang Polman No. 47 Tuppu Kode Pos 91254 HIMBAUAN Nomor : /KL/ VIII / 2023 Sehubungan dengan Masuknya Musim Kemarau yang menyebabkan kekeringan dimana mana dan kencangnya Angin,maka di sampaikan kepada seluruh warga Masyarakat Kelurahan Tadokkong agar waspada Kebakaran olehnya itu dihimbau untuk memperhatikan hal-hal sebagai berikut : Disampaikan kepada seluruh warga Kecamatan Lembang untuk tidak dengan sengaja memb"
+  },
+  {
+    "source_file": "JUAL BELI TANAH JANNI-MINASA CAPPALETE 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "PAHIMA",
+        "KADANG",
+        "MINASA Tempat",
+        "PAHIMA Nik",
+        "Nik",
+        "MINASA",
+        "JANNI",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315074402690002",
+        "7315061911850003",
+        "7315074211760002",
+        "7315064102620002"
+      ],
+      "ALAMAT": [
+        "Massila,RT:001/RW:001Kel",
+        "Cappalete",
+        "Saksi-saksi : 1",
+        "Massila,RT:001/RW:003 Kel",
+        "Massila,RT:001/RW:001 Kel",
+        "Cappalete,RT:001/RW:005 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "04 Juli 2025"
+      ],
+      "LUAS": [
+        "500 M2",
+        "200 M2",
+        "200 m2",
+        "230 M2"
+      ],
+      "HARGA": [
+        "Rp. 40.000.000",
+        "Rp.40.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Empat bulan Juli tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : JANNI / 63 Thn Nik : 7315064102620002 T.T.L/Umur : Tuppu, 01 – 02 - 1962 Pekerjaan : Mengurus Rumah Tangga Alamat : Massila,RT:001/RW:003 Kel.Lampa Kec.Duampanua Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MINASA / 48 Thn Nik : 7315074211760002 T.T.L/Umur : Salusape , 02 – 11 - 1978 Pekerjaan : Mengurus Rumah"
+  },
+  {
+    "source_file": "JUAL BELI TANAH HJ.INTANG-HAJIRA Salu kalobe 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "HJ.INTANG",
+        "HAJIRA",
+        "KADANG",
+        "Nik",
+        "HAJIRA Tempat",
+        "MUH SALEH",
+        "MURA",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "9271062604020001",
+        "7315076211730001",
+        "7315074107650008",
+        "9271062007590001",
+        "7315074503730002",
+        "7315070107840009",
+        "7315060208910001",
+        "7315077012690028",
+        "9271064709710001",
+        "9271060810050001",
+        "7315075912010001"
+      ],
+      "ALAMAT": [
+        "Salu kalobe,RT:002/RW:002Kel",
+        "Pajalele,RT:001/RW:003 Desa",
+        "Saksi-saksi : 1",
+        "Tuppu,RT:002/RW:002 Kel",
+        "Salu kalobe,RT:001/RW:001 Kel",
+        "Salukalobe",
+        "Bajeng Kaluku,RT: 001/RW: 001 Desa"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "03 Juni 2025",
+        "25 Juni 2025"
+      ],
+      "LUAS": [
+        "9.700 M2",
+        "9.700 m2",
+        "5.900 M2"
+      ],
+      "HARGA": [
+        "Rp.80.000.000",
+        "Rp. 80.000.000",
+        "Rp.170"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Dua Puluh Lima bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : HJ.INTANG / 52 Thn Nik : 7315074503730002 T.T.L/Umur : Salu kalobe, 05 – 03 - 1973 Pekerjaan : Mengurus Rumah Tangga Alamat : Salu kalobe,RT:001/RW:001 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : HAJIRA / 55 Thn Nik : 7315077012690028 T.T.L/Umur : Suruang , 30 – 12 - 1969 Pek"
+  },
+  {
+    "source_file": "JUAL BELI TANAH MUSLIMIN-ABDUL AZIS 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "MUSLIMIN",
+        "ABDUL AZIS Tempat",
+        "Nik",
+        "Dua Puluh Lima kami",
+        "ABDUL AZIS"
+      ],
+      "NIK": [
+        "7315077112830019",
+        "7315077112760011",
+        "7315073112530006",
+        "7316055405860001",
+        "6471034304740005",
+        "7315070106800016",
+        "6408012904660002"
+      ],
+      "ALAMAT": [
+        "Talambung Riawa,RT: 001/RW: 001 Desa",
+        "Saksi-saksi : 1",
+        "Buttu tanre,RT: 001/RW: 006 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "11 Juni 2025"
+      ],
+      "LUAS": [
+        "238 m2",
+        "255 M2",
+        "116 M2"
+      ],
+      "HARGA": [
+        "Rp. 50.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Sebelas bulan Juni tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : MUSLIMIN / 71 Thn Nik : 7315073112530006 T.T.L/Umur : Tuppu , 31 – 12 - 1953 Pekerjaan : Petani/Pekebun Alamat : Talambung Riawa,RT: 001/RW: 001 Desa.Rajang Kec.Lembang Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : ABDUL AZIS / 44 Thn Nik : 7315070106800016 T.T.L/Umur : Pinrang , 01– 06 - 1980 Pekerjaan : Petani/Pekebu"
+  },
+  {
+    "source_file": "AJB NURKIAH H SADDIKA-MAKMUR TUPPU2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "MAKMUR",
+        "NURKIAH.H.M",
+        "Nik",
+        "MAKMUR Tempat",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315046706810002",
+        "7315116007890001",
+        "3172042208750003"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Perumahan Regency,RT: 001/RW: 001 Kel"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "13 Oktober 2025"
+      ],
+      "LUAS": [
+        "345 M2",
+        "500 M2",
+        "65 M2"
+      ],
+      "HARGA": [
+        "Rp. 65.000.000",
+        "Rp. 65"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Tiga Belas bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : NURKIAH.H.M,SADDIKA / 44 Thn Nik : 7315046706810002 T.T.L/Umur : Tuppu , 27 – 06 - 1981 Pekerjaan : Wiraswasta Alamat : Perumahan Regency,RT: 001/RW: 001 Kel.Desa.Turikale Kec. Turikale Kab.Maros Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MAKMUR / 50 Thn Nik : 3172042208750003 T.T.L/Umur : Tuppu , 22– 08 - 1975 Pekerjaan"
+  },
+  {
+    "source_file": "AJB NIRWANA-MARSANA TUPPU2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "NIRWANA",
+        "MARSANA",
+        "KADANG",
+        "MARSANA Tempat",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "6310045808680004",
+        "6405027112620040"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : Tuppu, 07 Oktober 2025"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "07 Oktober 2025"
+      ],
+      "LUAS": [
+        "350 M2",
+        "350 m2"
+      ],
+      "HARGA": [
+        "Rp. 65.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Tujuh bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : NIRWANA / 57 Thn Nik : 6310045808680004 T.T.L/Umur : Polewali , 18 – 08 - 1968 Pekerjaan : Mengurus Rumah Tangga Alamat : Jl.Inpres Telkom,RT: 003/RW: 000 Kel/Desa.Makmur Jaya Kec.Satui Kab.Tanah Bumbu Prov.Kalimantan Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MARSANA / 62 Thn Nik : 6405027112620040 T.T.L/Umur : Pinrang , 31 – 12 "
+  },
+  {
+    "source_file": "JUAL BELI TANAH SAKKA-LUKASLONDE KALOSI2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SUBURI",
+        "KADANG",
+        "LUKASLONDE",
+        "SAKKA",
+        "SUBURI Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315072001620001",
+        "7315073112790056",
+        "7315071507420001",
+        "7315071501740003",
+        "7315070206720002"
+      ],
+      "ALAMAT": [
+        "Kalosi,RT",
+        "Kalosi ,RT",
+        "Kalosi,RT:001/RW:007 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "29 Oktober 2025",
+        "20 Oktober 2025"
+      ],
+      "LUAS": [
+        "77 M2",
+        "77 m2",
+        "195 m2",
+        "195 M2"
+      ],
+      "HARGA": [
+        "Rp. 50.000.000",
+        "Rp.50.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Rabu tanggal Dua Puluh Sembilan bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SAKKA / 83 Thn Nik : 7315071507420001 T.T.L/Umur : Kalosi , 15 – 07 – 1942 Pekerjaan : Petani/Pekebun Alamat : Kalosi,RT:001/RW:007 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : LUKASLONDE / 53 Thn Nik : 7315070206720002 T.T.L/Umur : Karawa, 02 - 06 - 1974 Pekerjaan : Pe"
+  },
+  {
+    "source_file": "Jual Beli ALBIN 2024.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "ALBIN",
+        "KADANG",
+        "SAWIA",
+        "SUMARNI",
+        "NADIRA",
+        "Nik",
+        "GELA",
+        "Dua Puluh Empat kami",
+        "GELA Nik"
+      ],
+      "NIK": [
+        "7315073011700001",
+        "7315075107650003",
+        "7315075303750002",
+        "7315075205930003",
+        "7315074311720002"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Pajalele,RT",
+        "Kanipang,RT:001/RW:001Desa",
+        "Pao,RT:001/RW:001Kel",
+        "Salu dadeko,RT"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "15 Februari 2024"
+      ],
+      "LUAS": [
+        "990.855 M2",
+        "990,855 M2",
+        "4.850 M2",
+        "32,5 m2",
+        "1.000M2",
+        "162,5 m2"
+      ],
+      "HARGA": [
+        "Rp. 35.000",
+        "Rp.35.000.000",
+        "Rp.97.000.000"
+      ]
+    },
+    "text_preview": "SURAT PENGANTAR Nomor : 08 / T.AH / LK-MB / II / 2024 Selanjutnya disebut Pihak II (Pihak Kedua), Untuk Mendapatkan Akte Jual Beli / Akta Pembagian Hak Bersama / Akte Hibah yang Terletak di Salu dadeko Lingkungan Mattiro bulu Kelurahan Tadokkong, Dengan Luas : 990.855 M2,Bangunan seluas M2 NOP: 73.15.080.002. 018 - 0067.0 Tertulis atas Nama ALIRAH HENDA dengan Batas – Batas Sebagai Berikut : Tanah tersebut diatas tidak ada tuntutan / gugatan dari pihak lain dan tidak ada sengketa sampai surat ke"
+  },
+  {
+    "source_file": "AJB NURU-HAMSIAH LAMBALUMAMA2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "NURU",
+        "HAMSIAH Tempat",
+        "HAMSIAH",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315075905710001",
+        "6503067112670001",
+        "7315077112770196"
+      ],
+      "ALAMAT": [
+        "Salu sape,RT: 000/RW: 000 Kel",
+        "Saksi-saksi : Tuppu, 03 Oktober 2025"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "03 Oktober 2025"
+      ],
+      "LUAS": [
+        "3.500 m2",
+        "3.500 M2"
+      ],
+      "HARGA": [
+        "Rp. 65.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Tiga bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : NURU / 47 Thn Nik : 7315077112770196 T.T.L/Umur : Salu sape ,31 – 12 - 1977 Pekerjaan : Mengurus Rumah Tangga Alamat : Salu sape,RT: 000/RW: 000 Kel.Tadokkong Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : HAMSIAH / 57 Thn Nik : 6503067112670001 T.T.L/Umur : Pinrang , 31 – 12 - 1957 Pekerjaan : Meng"
+  },
+  {
+    "source_file": "AJB AFRIDA RIYANI-KASIM KALOSI2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "AFRIDA RIYANI",
+        "KADANG",
+        "MUH.KASIM",
+        "Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315070302750003",
+        "6471054204680001",
+        "6471052501860002"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Kalosi,RT"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "13 Oktober 2025"
+      ],
+      "LUAS": [
+        "70 M2",
+        "374 M2"
+      ],
+      "HARGA": [
+        "Rp. 35.000.000",
+        "Rp.35.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Tiga Belas bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : AFRIDA RIYANI / 57 Thn Nik : 6471054204680001 T.T.L/Umur : Tanjung Jumlai , 02 - 04 -1968 Pekerjaan : Mengurus Rumah Tangga Alamat : Jl.Jend Sudirman No.53,RT:001/RW:000 Kel/Desa.Damai Kec.Balikpapan Kota Kota. Balikpapan Prov.Kalimantan Timur SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : MUH.KASIM N / 50 Thn Nik : 7315070302750003 T.T.L"
+  },
+  {
+    "source_file": "JADWAL PELAJARAN.docx",
+    "extracted_entities": {
+      "NAMA": [],
+      "NIK": [],
+      "ALAMAT": [],
+      "PEKERJAAN": [],
+      "JABATAN": [],
+      "TGL": [],
+      "LUAS": [],
+      "HARGA": []
+    },
+    "text_preview": "JADWAL PELAJARAN SENIN SELASA RABU UPACARA PENDIDIKAN AGAMA ISLAM BAHASA INGGRIS MATEMATIKA PENDIDIKAN AGAMA ISLAM BAHASA INGGRIS MATEMATIKA PENDIDIKAN AGAMA ISLAM BAHASA INDONESIA ISTIRAHAT ISTIRAHAT ISTIRAHAT BAHASA INDONESIA"
+  },
+  {
+    "source_file": "AJB BUNGA-SANO Cappalete2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "SANO Tempat",
+        "SANO",
+        "TAIYEB",
+        "Dua Puluh Lima kami",
+        "MUHAMMAD DEDI.T Nik"
+      ],
+      "NIK": [
+        "7315070101680006",
+        "7315071605500001",
+        "7315074506700002",
+        "7315071010900008"
+      ],
+      "ALAMAT": [
+        "Cappalete",
+        "Saksi-saksi : 1",
+        "Salu sape,RT:001/RW:003 Kel",
+        "Salu sap,RT:001/RW:003Kel",
+        "Cappalete,RT:001/RW:005 Kel"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "20 Oktober 2025"
+      ],
+      "LUAS": [
+        "314 m2",
+        "696 M2",
+        "314 M2"
+      ],
+      "HARGA": [
+        "Rp.65.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Dua Puluh bulan Oktober tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : TAIYEB / 57 Thn Nik : 7315070101680006 T.T.L/Umur : Kajuangin, 01 – 01 - 1968 Pekerjaan : Wiraswasta Alamat : Jl.Bandeng,RT:003/RW:003 Desa.Sabbang paru Kec.Lembang Kab.Pinrang Prov.Sulawesi Selatan. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SANO / 75 Thn Nik : 7315071605500001 T.T.L/Umur : Lombok , 16 – 05 - 1950 Pekerjaan : Petani/P"
+  },
+  {
+    "source_file": "JUAL BELI TANAH JAMA-SAPPE Lambalumama 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "AYUANDIRA",
+        "KADANG",
+        "JAMA Tempat",
+        "Nik",
+        "SAPPE",
+        "AYUANDIRA Nik",
+        "JAMA",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315077012450002",
+        "7315053112820127",
+        "7315075512690002",
+        "7315075107610001",
+        "7315071008750002"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Indoapping,RT:001/RW:001 Desa",
+        "Pambangun,Kel",
+        "Cappalete ,RT",
+        "Pambangun,RT:002/RW:006 Kel"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "02 Desember 2024",
+        "02 Deseber 2024"
+      ],
+      "LUAS": [
+        "2.400 m2",
+        "2.400 M2"
+      ],
+      "HARGA": [
+        "Rp. 70.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Sebelas bulan Februari tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : JAMA / 63 Thn Nik : 7315075107610001 T.T.L/Umur : Indoapping ,11 – 07 – 1961 Pekerjaan : Mengurus Rumah Tangga Alamat : Indoapping,RT:001/RW:001 Desa.Benteng Paremba Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SAPPE / 79 Thn Nik : 7315077012450002 T.T.L/Umur : Cappa lete, 30 - 12 - 1945 Pek"
+  },
+  {
+    "source_file": "AHLI WARIS TANAH RENTA KALOSI 2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KUASA",
+        "SAKKA",
+        "Almarhumah Ninja",
+        "LAPPA",
+        "YANTA"
+      ],
+      "NIK": [
+        "7315071507420001",
+        "7315072001620001",
+        "7315071501740003"
+      ],
+      "ALAMAT": [],
+      "PEKERJAAN": [],
+      "JABATAN": [],
+      "TGL": [
+        "07 Juli 2025"
+      ],
+      "LUAS": [
+        "6.500 M2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT KETERANGAN AHLI WARIS Kami yang bertanda tangan dibawah ini masing-masing Ahli Waris dari Almarhum Renta yang menyatakan dengan sesungguhnya dan sanggup diangkat sumpah, bahwa Almarhum Renta bertempat tinggal terakhir di Kalosi Kel.Tadokkong Kec.Lembang Kabupaten Pinrang Provinsi Sulawesi Selatan, yang telah meninggal dunia pada Thn 2000 berdasarkan Keterangan Kematian Nomor: 33/KT-LB/VII/2025,semasa hidupnya telah menikah dengan Istrinya yang bernama Almarhumah Ninja yang telah meninggal "
+  },
+  {
+    "source_file": "Jual Beli Halili dan Kasmawati Salukalobe.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "Sebelah Timur Berbatasan",
+        "Nik",
+        "KASMAWATI",
+        "Adapun Perjanjian Jual beli Tanah",
+        "HALILI",
+        "N.BABA Nik",
+        "Dua Puluh Empat kami",
+        "Sebelah selatan berbatasan",
+        "HALILI Tempat",
+        "Bahwa bidang tanah tersebut"
+      ],
+      "NIK": [
+        "7315075208940002",
+        "6473010205710004",
+        "7315064303830003",
+        "7315075708960005",
+        "9271052412610001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Tal riawa"
+      ],
+      "PEKERJAAN": [
+        "Wiraswasta"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "27 Desember 2024"
+      ],
+      "LUAS": [
+        "238 M2",
+        "238 m2",
+        "255 M2"
+      ],
+      "HARGA": [
+        "Rp. 80.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Jumat tanggal Dua Puluh Tujuh bulan Desember tahun Dua Ribu Dua Puluh Empat kami yang bertandatangan di bawah ini: Nama : HALILI / 53 Thn Nik : 6473010205710004 T.T.L/Umur : Pinrang , 02 – 05 - 1971 Pekerjaan : Wiraswasta Alamat : Jl.Sesanip,RT: 060/RW: 000 Desa.Karang anyar Kec.Tarakan Barat Kota.Tarakan Prov.Kalimantan Utara. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : KASMAWATI / 30 Thn Nik : 7315075208940002 T.T.L/Umur : Sabah , 12 – 08 - 1994 "
+  },
+  {
+    "source_file": "AJB NAHA-SIDA Lambalumama2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "SIDA BINTI YONTA",
+        "NAHA",
+        "Nik",
+        "SIDA BINTI YONTA Tempat",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315077112880130",
+        "7322025707810002",
+        "7315045505870005",
+        "7315074301670001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Guliling ,RT",
+        "Dusun Tetelangka,RT:000/RW:000 Kel/Desa"
+      ],
+      "PEKERJAAN": [
+        "Mengurus Rumah Tangga"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "15 September 2025"
+      ],
+      "LUAS": [
+        "503 m2",
+        "503 M2"
+      ],
+      "HARGA": [
+        "Rp. 45.000.000",
+        "Rp 45.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Lima Belas bulan September tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : NAHA / 58 Thn Nik : 7315074301670001 T.T.L/Umur : Lamba lumama , 03 – 01 – 1967 Pekerjaan : Mengurus Rumah Tangga Alamat : Dusun Tetelangka,RT:000/RW:000 Kel/Desa.Sadar Kec. Bone-bone Kab.Luwu Utara Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SIDA BINTI YONTA / 37 Thn Nik : 7315077112880130 T.T.L/Umur : Lambalum"
+  },
+  {
+    "source_file": "JUAL BELI SAKKA-BABA KALOSI2025.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "SUBURI",
+        "KADANG",
+        "SAKKA",
+        "BABA",
+        "SUBURI Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7315072001620001",
+        "7315073112790056",
+        "7315071507420001",
+        "7315077112810107",
+        "7315071501740003"
+      ],
+      "ALAMAT": [
+        "Kalosi,RT",
+        "Kalosi ,RT",
+        "Kalosi,RT:001/RW:007 Kel"
+      ],
+      "PEKERJAAN": [
+        "Petani/Pekebun"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "15 September 2025"
+      ],
+      "LUAS": [
+        "77 M2",
+        "91 M2",
+        "6.000 M2",
+        "91 m2"
+      ],
+      "HARGA": [
+        "Rp. 20.000.000",
+        "Rp.20.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Senin tanggal Lima Belas bulan September tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SAKKA / 83 Thn Nik : 7315071507420001 T.T.L/Umur : Kalosi , 15 – 07 – 1942 Pekerjaan : Petani/Pekebun Alamat : Kalosi,RT:001/RW:007 Kel.Tadokkong Kec. Lembang Kab.Pinrang Prov.Sulawesi Selatan SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : BABA / 43 Thn Nik : 7315077112810107 T.T.L/Umur : Kalosi, 31 - 12 - 1981 Pekerjaan : Mengurus Ruma"
+  },
+  {
+    "source_file": "JUAL BELI TANAH BUSTAMI - GAZALI,S.M TUPPU 2025 (AutoRecovered).docx",
+    "extracted_entities": {
+      "NAMA": [
+        "GAZALI.S.M Tempat",
+        "KADANG",
+        "BUSTAMI",
+        "WIDYA AMIMSYIH",
+        "GAZALI",
+        "HAJRA",
+        "BUSTAMI Nik",
+        "HAJRA Nik",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "7371096708860003",
+        "7315040305900001",
+        "7315077112570042",
+        "7315071107860001",
+        "7371096109630001"
+      ],
+      "ALAMAT": [
+        "Maccini Raya Lr",
+        "Jl. Seroja ,RT: 002/RW: 001 Kel",
+        "Salu sape,RT:002/RW:003 Kel"
+      ],
+      "PEKERJAAN": [
+        "Pelajar/Mahasiswa"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "05 Agustus 2025"
+      ],
+      "LUAS": [
+        "558 M2",
+        "60 M2"
+      ],
+      "HARGA": [
+        "Rp.10.000.000",
+        "Rp. 10.000.000"
+      ]
+    },
+    "text_preview": "SURAT PERJANJIAN JUAL BELI TANAH Pada hari ini Selasa tanggal Lima bulan Agustus tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : WIDYA AMIMSYIH / 38 Thn Nik : 7371096708860003 T.T.L/Umur : Ujung Pandang, 27 – 08 - 1986 Pekerjaan : Pelajar/Mahasiswa Alamat : Maccini Raya Lr.Angkasa Biru No.28,RT: 001/RW: 010 Kel/Desa.Karuwisi Kec.Panakukang Kota Makassar Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : GAZALI,S.M / 35 Thn Nik : 7315040305900001 T.T.L/Umur : T"
+  },
+  {
+    "source_file": "HIBAH TANAH SANI-SARFIKA LAMBALUMAMA.docx",
+    "extracted_entities": {
+      "NAMA": [
+        "KADANG",
+        "SANI",
+        "Nik",
+        "SARFIKA JUMAIN",
+        "Dua Puluh Lima kami"
+      ],
+      "NIK": [
+        "6473041001610002",
+        "7315064207040001",
+        "7315064505610001"
+      ],
+      "ALAMAT": [
+        "Saksi-saksi : 1",
+        "Bajeng Kaluku,RT: 002/RW: 001 Desa"
+      ],
+      "PEKERJAAN": [
+        "Belum/Tidak Bekerja"
+      ],
+      "JABATAN": [
+        "jaminan"
+      ],
+      "TGL": [
+        "08 Januari 2025"
+      ],
+      "LUAS": [
+        "3.200M2",
+        "3.773 m2",
+        "3.773 M2"
+      ],
+      "HARGA": []
+    },
+    "text_preview": "SURAT PERJANJIAN HIBAH TANAH Pada hari ini Rabu tanggal Delapan bulan Januari tahun Dua Ribu Dua Puluh Lima kami yang bertandatangan di bawah ini: Nama : SANI / 63 Thn Nik : 7315064505610001 T.T.L/Umur : Bungi , 05 – 05- 1961 Pekerjaan : Belum/Tidak Bekerja Alamat : Bajeng Kaluku,RT: 002/RW: 001 Desa.Bungi Kec.Duampanua Kab.Pinrang Prov.Sul-Sel. SELANJUTNYA DISEBUT PIHAK I (PERTAMA) Nama : SARFIKA JUMAIN / 20 Thn Nik : 7315064207040001 T.T.L/Umur : Pinrang , 02 - 07 - 2004 Pekerjaan : Pelajar /M"
+  }
+]
