@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+results_ner/
+results_person/
+model_ner_indobert/
+model_ner_person/
+.ipynb_checkpoints/
+*.docx
+!datasurat/*.docx
+# Abaikan file model besar jika sudah ada
+*.bin
+*.pt
+*.safetensors
