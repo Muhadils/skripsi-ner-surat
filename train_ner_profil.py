@@ -8,12 +8,15 @@ from torch import nn
 import numpy as np
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
-# 1. Konfigurasi Profil (ALAMAT, KERJA, TGL, JABATAN)
-model_name = "indobenchmark/indobert-lite-base-p2"
+# 1. Konfigurasi Pintar (Hybrid)
+local_path = "./indobert-base-local"
+model_name = local_path if os.path.exists(local_path) else "indobenchmark/indobert-lite-base-p2"
+
 label_list = ["O", "B-ALAMAT", "I-ALAMAT", "B-KERJA", "I-KERJA", "B-TGL", "I-TGL", "B-JABATAN", "I-JABATAN"]
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for i, label in enumerate(label_list)}
 
+print(f"Menggunakan model dari: {model_name}")
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
 
 class WeightedTrainer(Trainer):
@@ -21,7 +24,6 @@ class WeightedTrainer(Trainer):
         labels = inputs.get("labels")
         outputs = model(**inputs)
         logits = outputs.get("logits")
-        # Bobot tinggi untuk semua entitas profil
         weights = torch.tensor([1.0] + [15.0] * (len(label_list) - 1)).to(logits.device)
         loss_fct = nn.CrossEntropyLoss(weight=weights)
         loss = loss_fct(logits.view(-1, self.model.config.num_labels), labels.view(-1))

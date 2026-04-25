@@ -8,12 +8,15 @@ from torch import nn
 import numpy as np
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
-# 1. Konfigurasi Khusus (Hanya NIK)
-model_name = "indobenchmark/indobert-lite-base-p2"
+# 1. Konfigurasi Pintar (Hybrid)
+local_path = "./indobert-base-local"
+model_name = local_path if os.path.exists(local_path) else "indobenchmark/indobert-lite-base-p2"
+
 label_list = ["O", "B-NIK", "I-NIK"]
 label2id = {label: i for i, label in enumerate(label_list)}
 id2label = {i: label for i, label in enumerate(label_list)}
 
+print(f"Menggunakan model dari: {model_name}")
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
 
 class WeightedTrainer(Trainer):
