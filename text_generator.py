@@ -126,7 +126,7 @@ Nama                    : {entities.get('nama', 'Nama Lengkap')}
 
     Adalah benar penduduk yang bertempat tinggal di wilayah Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan.
 
-Surat keterangan ini diberikan untuk keperluan: [Sebutkan Keperluan]
+Surat keterangan ini diberikan untuk keperluan: {entities.get('maksud_tujuan', '[Sebutkan Keperluan]')}
 
 Demikian surat keterangan ini dibuat dengan sebenar-benarnya dan dapat dipergunakan sebagai mana mestinya.
 
@@ -150,7 +150,7 @@ Nama                    : {entities.get('nama', 'Nama Lengkap')}
     Alamat                  : {entities.get('alamat', 'Alamat')}
     Pekerjaan/Usaha         : {entities.get('pekerjaan', 'Jenis Usaha')}
 
-    Adalah benar memiliki usaha di wilayah Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang dan layak diberikan surat keterangan usaha untuk keperluan: [Sebutkan Keperluan]
+Surat keterangan ini diberikan untuk keperluan: {entities.get('maksud_tujuan', '[Sebutkan Keperluan]')}
 
 Surat keterangan ini berlaku selama 1 (satu) tahun apabila diperlukan dapat diperpanjang kembali.
 
@@ -181,7 +181,7 @@ Nama                    : {entities.get('nama', 'Nama Lengkap')}
 
     Adalah benar penduduk Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Sulawesi Selatan dan memerlukan surat ini untuk keperluan:
 
-[Sebutkan Maksud dan Tujuan]
+{entities.get('maksud_tujuan', '[Sebutkan Maksud dan Tujuan]')}
 
 Oleh karena itu kami mohon bantuan dan kerja sama Bapak/Ibu dalam memberikan pelayanan kepada yang bersangkutan sebagaimana mestinya.
 
@@ -216,14 +216,14 @@ NIP. [Nomor Induk Pegawai]"""
 
         # Global page layout
         section = doc.sections[0]
-        section.top_margin = Inches(1.0)
-        section.bottom_margin = Inches(1.0)
-        section.left_margin = Inches(1.25)
-        section.right_margin = Inches(1.0)
+        section.top_margin = Inches(0.8)
+        section.bottom_margin = Inches(0.8)
+        section.left_margin = Inches(1.0)
+        section.right_margin = Inches(0.9)
 
         style = doc.styles["Normal"]
         style.font.name = "Times New Roman"
-        style.font.size = Pt(12)
+        style.font.size = Pt(11)
 
         lines = text.split("\n")
         signature_mode = False
@@ -243,7 +243,7 @@ NIP. [Nomor Induk Pegawai]"""
 
             if not line:
                 spacer = doc.add_paragraph("")
-                spacer.paragraph_format.space_after = Pt(3)
+                spacer.paragraph_format.space_after = Pt(1)
                 continue
 
             if not title_skipped:
@@ -253,22 +253,22 @@ NIP. [Nomor Induk Pegawai]"""
             if line.startswith("Diberikan di:") or line.startswith("Tanggal:"):
                 p = doc.add_paragraph(line)
                 p.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
-                p.paragraph_format.space_after = Pt(2)
+                p.paragraph_format.space_after = Pt(0)
                 signature_mode = True
                 continue
 
             if line in {"[Tanda Tangan dan Stempel]"}:
                 spacer = doc.add_paragraph("")
-                spacer.paragraph_format.space_after = Pt(12)
+                spacer.paragraph_format.space_after = Pt(4)
                 line_block = doc.add_paragraph("______________________________")
                 line_block.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
-                line_block.paragraph_format.space_after = Pt(6)
+                line_block.paragraph_format.space_after = Pt(2)
                 continue
 
             if line in {"Lurah Tadokkong", "[Nama Lengkap Lurah]", "[Nomor Induk Pegawai]"}:
                 p = doc.add_paragraph(line)
                 p.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
-                p.paragraph_format.space_after = Pt(2)
+                p.paragraph_format.space_after = Pt(0)
                 if line in {"Lurah Tadokkong", "[Nama Lengkap Lurah]"}:
                     p.runs[0].bold = True
                 continue
@@ -276,8 +276,8 @@ NIP. [Nomor Induk Pegawai]"""
             if self._is_biodata_line(line):
                 label, value = [part.strip() for part in line.split(":", 1)]
                 p = doc.add_paragraph()
-                p.paragraph_format.line_spacing = 1.3
-                p.paragraph_format.space_after = Pt(2)
+                p.paragraph_format.line_spacing = 1.1
+                p.paragraph_format.space_after = Pt(0)
                 p.paragraph_format.tab_stops.add_tab_stop(Inches(2.75))
                 p.add_run(self._format_biodata_label(label))
                 p.add_run("\t: ")
@@ -285,8 +285,8 @@ NIP. [Nomor Induk Pegawai]"""
                 continue
 
             p = doc.add_paragraph(line)
-            p.paragraph_format.line_spacing = 1.3
-            p.paragraph_format.space_after = Pt(6)
+            p.paragraph_format.line_spacing = 1.1
+            p.paragraph_format.space_after = Pt(1)
 
             if signature_mode:
                 p.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
@@ -344,20 +344,20 @@ NIP. [Nomor Induk Pegawai]"""
             for idx, header_line in enumerate(header_lines):
                 p = doc.add_paragraph(header_line)
                 p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-                p.paragraph_format.space_after = Pt(0 if idx < len(header_lines) - 1 else 4)
+                p.paragraph_format.space_after = Pt(0 if idx < len(header_lines) - 1 else 2)
                 run = p.runs[0]
                 run.bold = True if idx < 2 else False
-                run.font.size = Pt(12 if idx < 2 else 10)
+                run.font.size = Pt(11 if idx < 2 else 9)
 
             line = doc.add_paragraph("=" * 60)
             line.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-            line.paragraph_format.space_after = Pt(6)
+            line.paragraph_format.space_after = Pt(3)
 
         title_code = self._generate_nomor_surat(surat_title)
         nomor = doc.add_paragraph(f"Nomor\t: {title_code}")
         nomor.paragraph_format.space_after = Pt(0)
         perihal = doc.add_paragraph(f"Perihal\t: {surat_title.upper() if surat_title else 'SURAT KETERANGAN'}")
-        perihal.paragraph_format.space_after = Pt(8)
+        perihal.paragraph_format.space_after = Pt(4)
 
     def _generate_nomor_surat(self, surat_title):
         """Generate a simple formal letter number based on the title."""

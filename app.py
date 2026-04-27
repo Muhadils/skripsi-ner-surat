@@ -291,6 +291,11 @@ HTML_TEMPLATE = """
                     <input type="text" id="alamat" name="alamat" placeholder="Contoh: Tuppu, Kel. Tadokkong, Kec. Lembang, Kab. Pinrang" required>
                 </div>
 
+                <div class="form-group" id="maksudTujuanGroup">
+                    <label for="maksud_tujuan">Maksud/Tujuan/Keperluan *</label>
+                    <textarea id="maksud_tujuan" name="maksud_tujuan" rows="3" placeholder="Contoh: Mengurus administrasi kependudukan di kantor desa" required></textarea>
+                </div>
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="pekerjaan">Pekerjaan/Profesi *</label>
@@ -337,12 +342,48 @@ HTML_TEMPLATE = """
         function updateFormFields() {
             const suratType = document.getElementById('suratType').value;
             const jabatanGroup = document.getElementById('jabatanGroup');
+            const maksudTujuanGroup = document.getElementById('maksudTujuanGroup');
+            const maksudTujuanInput = document.getElementById('maksud_tujuan');
 
             if (suratType === 'usaha') {
                 jabatanGroup.style.display = 'block';
             } else {
                 jabatanGroup.style.display = 'none';
             }
+
+            if (suratType === 'pengantar') {
+                maksudTujuanGroup.style.display = 'block';
+                maksudTujuanInput.required = true;
+                maksudTujuanInput.placeholder = 'Contoh: Meminta surat pengantar untuk keperluan administrasi';
+            } else {
+                maksudTujuanGroup.style.display = 'none';
+                maksudTujuanInput.required = false;
+                if (suratType === 'domisili') {
+                    maksudTujuanInput.placeholder = 'Otomatis digunakan untuk keperluan administrasi kependudukan';
+                    maksudTujuanInput.value = maksudTujuanInput.value || 'Mengurus administrasi kependudukan';
+                } else if (suratType === 'usaha') {
+                    maksudTujuanInput.placeholder = 'Otomatis digunakan untuk keperluan surat keterangan usaha';
+                    maksudTujuanInput.value = maksudTujuanInput.value || 'Mengurus surat keterangan usaha';
+                } else {
+                    maksudTujuanInput.placeholder = 'Contoh: Mengurus administrasi kependudukan di kantor desa';
+                }
+            }
+        }
+
+        function getMaksudTujuanValue(suratType) {
+            if (suratType === 'pengantar') {
+                return document.getElementById('maksud_tujuan').value.trim();
+            }
+
+            if (suratType === 'domisili') {
+                return 'Mengurus administrasi kependudukan';
+            }
+
+            if (suratType === 'usaha') {
+                return 'Mengurus surat keterangan usaha';
+            }
+
+            return 'Keperluan administrasi';
         }
 
         function showAlert(message, type) {
@@ -370,13 +411,14 @@ HTML_TEMPLATE = """
                 'nama': document.getElementById('nama').value,
                 'nik': document.getElementById('nik').value,
                 'alamat': document.getElementById('alamat').value,
+                'maksud_tujuan': getMaksudTujuanValue(suratType),
                 'pekerjaan': document.getElementById('pekerjaan').value,
                 'tanggal': formatDate(document.getElementById('tanggal').value),
                 'jabatan': document.getElementById('jabatan').value
             };
 
             // Validate
-            if (!entities.nama || !entities.nik || !entities.alamat) {
+            if (!entities.nama || !entities.nik || !entities.alamat || (suratType === 'pengantar' && !entities.maksud_tujuan)) {
                 showAlert('❌ Isi semua field yang diperlukan!', 'error');
                 return;
             }
@@ -413,12 +455,13 @@ HTML_TEMPLATE = """
                 'nama': document.getElementById('nama').value,
                 'nik': document.getElementById('nik').value,
                 'alamat': document.getElementById('alamat').value,
+                'maksud_tujuan': getMaksudTujuanValue(suratType),
                 'pekerjaan': document.getElementById('pekerjaan').value,
                 'tanggal': formatDate(document.getElementById('tanggal').value),
                 'jabatan': document.getElementById('jabatan').value
             };
 
-            if (!entities.nama || !entities.nik || !entities.alamat) {
+            if (!entities.nama || !entities.nik || !entities.alamat || (suratType === 'pengantar' && !entities.maksud_tujuan)) {
                 showAlert('❌ Isi semua field yang diperlukan!', 'error');
                 return;
             }
