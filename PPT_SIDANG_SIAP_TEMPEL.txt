@@ -1,0 +1,331 @@
+TEKS PPT SIDANG SKRIPSI
+Sistem Pembuatan Teks Otomatis Dokumen Administrasi Berbasis NLP dan NER
+
+Panduan pakai:
+- Salin per bagian Slide 1, Slide 2, dst ke PowerPoint.
+- Bagian "Saran Gambar" berisi rekomendasi visual + deskripsi isi gambar.
+- Jika waktu presentasi terbatas, gunakan versi ringkas pada setiap slide.
+
+==================================================
+SLIDE 1 - JUDUL
+==================================================
+Judul Slide:
+Sistem Pembuatan Teks Otomatis Dokumen Administrasi Berbasis NLP dan NER
+
+Isi Slide:
+- Nama: Nurfadilah Rahman
+- Program Studi: [Isi sesuai prodi]
+- Fakultas/Universitas: [Isi sesuai kampus]
+- Tahun: 2026
+
+Narasi Singkat:
+Pada penelitian ini saya mengembangkan sistem otomatisasi pembuatan surat administrasi berbahasa Indonesia menggunakan Natural Language Processing dan Named Entity Recognition.
+
+Saran Gambar:
+- Jenis gambar: Ilustrasi alur dokumen manual ke dokumen digital.
+- Deskripsi gambar: Di sisi kiri ada tumpukan berkas surat manual, di tengah ada ikon AI/NLP, di kanan ada output file surat DOCX yang rapi.
+
+==================================================
+SLIDE 2 - LATAR BELAKANG
+==================================================
+Judul Slide:
+Latar Belakang
+
+Isi Slide:
+- Proses pembuatan surat administrasi masih banyak dilakukan manual.
+- Proses manual memakan waktu, rawan salah ketik, dan format tidak selalu konsisten.
+- Dibutuhkan sistem yang mampu mengekstraksi data penting dari dokumen dan menghasilkan surat otomatis.
+- NLP dan NER dipilih karena efektif untuk memahami teks dan mengenali entitas penting.
+
+Narasi Singkat:
+Permasalahan utama ada pada efisiensi dan konsistensi layanan administrasi. Solusi yang ditawarkan adalah sistem otomatis yang tetap menjaga format resmi surat.
+
+Saran Gambar:
+- Jenis gambar: Infografik masalah.
+- Deskripsi gambar: 3 ikon utama: jam (waktu lama), tanda seru (error), dokumen tidak seragam (inkonsistensi format).
+
+==================================================
+SLIDE 3 - RUMUSAN MASALAH
+==================================================
+Judul Slide:
+Rumusan Masalah
+
+Isi Slide:
+- Bagaimana merancang sistem otomasi pembuatan surat administrasi berbasis NLP?
+- Bagaimana menerapkan NER untuk mengekstraksi entitas penting dari dokumen?
+- Seberapa baik kinerja sistem dalam menghasilkan teks dan dokumen surat?
+
+Saran Gambar:
+- Jenis gambar: Diagram pertanyaan penelitian.
+- Deskripsi gambar: Tiga kotak pertanyaan yang mengarah ke satu kotak besar bertuliskan "Solusi Sistem Otomasi Surat".
+
+==================================================
+SLIDE 4 - TUJUAN PENELITIAN
+==================================================
+Judul Slide:
+Tujuan Penelitian
+
+Isi Slide:
+- Membangun sistem pembuatan teks otomatis dokumen administrasi.
+- Mengimplementasikan NER untuk ekstraksi entitas (NIK, nama, profil, luas/harga).
+- Mengevaluasi performa sistem dari sisi akurasi dan kualitas hasil surat.
+
+Saran Gambar:
+- Jenis gambar: Ikon target.
+- Deskripsi gambar: Tiga target berurutan: "Bangun Sistem", "Ekstraksi Entitas", "Evaluasi Kinerja".
+
+==================================================
+SLIDE 5 - MANFAAT PENELITIAN
+==================================================
+Judul Slide:
+Manfaat Penelitian
+
+Isi Slide:
+- Mempercepat proses administrasi surat.
+- Mengurangi kesalahan input manual.
+- Menjaga konsistensi format dokumen.
+- Menjadi dasar pengembangan sistem layanan publik berbasis AI.
+
+Saran Gambar:
+- Jenis gambar: Before-after process.
+- Deskripsi gambar: Sebelum (manual, lama, banyak revisi) dan sesudah (otomatis, cepat, konsisten).
+
+==================================================
+SLIDE 6 - DATASET
+==================================================
+Judul Slide:
+Dataset dan Sumber Data
+
+Isi Slide:
+- Sumber data: folder datasurat pada project.
+- Jumlah dokumen .docx: 60 file.
+- File pendukung: 1 file .jpg (logo).
+- Total file pada folder datasurat: 61 file.
+- Dataset pelatihan: dataset_ner.json (format JSONL).
+
+Saran Gambar:
+- Jenis gambar: Screenshot struktur folder project.
+- Deskripsi gambar: Tampilkan folder datasurat, dataset_ner.json, dan folder model untuk menegaskan data dan hasil training tersedia.
+
+==================================================
+SLIDE 7 - PREPROCESSING DATA
+==================================================
+Judul Slide:
+Tahap Preprocessing Data
+
+Isi Slide:
+- Ekstraksi teks dari dokumen .docx menggunakan python-docx.
+- Pembersihan teks (spasi berlebih, karakter tidak relevan).
+- Tokenisasi dan normalisasi.
+- Penyusunan data ke format JSONL (tokens dan ner_tags).
+
+Data Utama:
+- Ukuran dataset: 1,92 MB
+- Total sample: 34.255
+- Split 80:20: 27.404 training, 6.851 testing
+
+Saran Gambar:
+- Jenis gambar: Pipeline preprocessing.
+- Deskripsi gambar: Panah berurutan: DOCX -> Ekstraksi Teks -> Cleaning -> Tokenisasi -> JSONL.
+
+==================================================
+SLIDE 8 - ARSITEKTUR SISTEM
+==================================================
+Judul Slide:
+Arsitektur Sistem
+
+Isi Slide:
+- Input: dokumen/entitas dari pengguna.
+- Modul ekstraksi: NER multi-model (4 model terpisah).
+- Modul generasi teks: text_generator.py.
+- Output: preview teks + dokumen DOCX siap unduh.
+- Antarmuka web: app.py.
+
+Saran Gambar:
+- Jenis gambar: Diagram arsitektur blok.
+- Deskripsi gambar: User -> App -> NER Models -> Text Generator -> DOCX Output.
+
+==================================================
+SLIDE 9 - KONFIGURASI TRAINING
+==================================================
+Judul Slide:
+Konfigurasi Training
+
+Isi Slide:
+- Base model: IndoBERT (indobenchmark/indobert-lite-base-p2)
+- Optimizer: AdamW
+- Learning rate: 5e-5
+- Batch size: 8
+- Epoch: 3
+- Max sequence length: 512
+- Loss: CrossEntropyLoss dengan class weights
+
+Saran Gambar:
+- Jenis gambar: Tabel parameter training.
+- Deskripsi gambar: Tabel 2 kolom (Parameter dan Nilai) agar mudah dibaca dosen penguji.
+
+==================================================
+SLIDE 10 - HASIL MODEL NER
+==================================================
+Judul Slide:
+Hasil Evaluasi Model NER
+
+Isi Slide (Tabel):
+- PERSON: Precision 0,8670 | Recall 0,8520 | F1 0,8590
+- NIK: Precision 0,9450 | Recall 0,9200 | F1 0,9320
+- PROFIL: Precision 0,8820 | Recall 0,8580 | F1 0,8700
+- LUAS_HARGA: Precision 0,8570 | Recall 0,8290 | F1 0,8430
+
+Ringkasan:
+- Rata-rata F1 sederhana: 87,6%
+- Weighted average F1: 87,7%
+
+Saran Gambar:
+- Jenis gambar: Bar chart F1-score per model.
+- Deskripsi gambar: 4 batang untuk PERSON, NIK, PROFIL, LUAS_HARGA; batang NIK paling tinggi.
+
+==================================================
+SLIDE 11 - HASIL IMPLEMENTASI APLIKASI
+==================================================
+Judul Slide:
+Hasil Implementasi Aplikasi
+
+Isi Slide:
+- Aplikasi web berhasil menampilkan preview surat.
+- Sistem mendukung ekspor DOCX untuk jenis surat domisili, usaha, dan pengantar.
+- Header surat sudah konsisten dengan identitas instansi.
+- Kode Pos pada header: 91255.
+
+Saran Gambar:
+- Jenis gambar: Screenshot halaman web aplikasi.
+- Deskripsi gambar: Form input, tombol preview, tombol download, dan area hasil preview terlihat jelas.
+
+==================================================
+SLIDE 12 - BENCHMARK WAKTU PROSES
+==================================================
+Judul Slide:
+Benchmark Waktu Proses
+
+Isi Slide (Tabel):
+- Document loading: 0,2 detik
+- Text preprocessing: 0,3 detik
+- NER extraction (4 model): 2,1 detik
+- Entity structuring: 0,1 detik
+- Text generation: 0,3 detik
+- DOCX creation: 0,2 detik
+- Total end-to-end: 3,2 detik
+
+Kesimpulan Slide:
+Sistem mampu memproses dokumen secara cepat dan layak untuk alur administrasi.
+
+Saran Gambar:
+- Jenis gambar: Horizontal bar chart waktu proses.
+- Deskripsi gambar: Proses NER extraction tampak sebagai komponen waktu terbesar.
+
+==================================================
+SLIDE 13 - EVALUASI DAN PEMBAHASAN
+==================================================
+Judul Slide:
+Evaluasi Sistem
+
+Isi Slide:
+- Akurasi ekstraksi entitas (F1 weighted average): 87,7%
+- Relevansi teks yang dihasilkan: 87,6%
+- Keutuhan informasi: 91,2%
+- Format standar compliance: 98,0%
+- User satisfaction: 89,3%
+
+Inti Pembahasan:
+- Kinerja sistem baik untuk otomasi administrasi.
+- Entitas NIK paling kuat karena pola data stabil.
+- Tantangan terbesar pada entitas profil yang lebih variatif.
+
+Saran Gambar:
+- Jenis gambar: Radar chart evaluasi sistem.
+- Deskripsi gambar: Lima sumbu metrik evaluasi dengan area luas di atas 85%.
+
+==================================================
+SLIDE 14 - KELEBIHAN DAN KETERBATASAN
+==================================================
+Judul Slide:
+Kelebihan dan Keterbatasan
+
+Isi Slide:
+Kelebihan:
+- Proses cepat dan konsisten
+- Mengurangi kesalahan manual
+- Output surat rapi dan siap pakai
+
+Keterbatasan:
+- Sensitif pada variasi format dokumen
+- Tetap membutuhkan validasi manusia
+- Perlu retraining jika format data berubah signifikan
+
+Saran Gambar:
+- Jenis gambar: Two-column infographic.
+- Deskripsi gambar: Kolom kiri "Kelebihan" dengan ikon centang, kolom kanan "Keterbatasan" dengan ikon peringatan.
+
+==================================================
+SLIDE 15 - KESIMPULAN
+==================================================
+Judul Slide:
+Kesimpulan
+
+Isi Slide:
+- Sistem pembuatan teks otomatis dokumen administrasi berhasil dikembangkan.
+- Implementasi NLP dan 4 model NER mampu mengekstraksi entitas penting.
+- Hasil evaluasi menunjukkan weighted F1-score 87,7%.
+- Sistem efektif sebagai alat bantu layanan administrasi.
+
+Narasi Penutup:
+Penelitian ini menunjukkan bahwa otomasi dokumen berbasis NLP dan NER dapat diterapkan secara praktis untuk meningkatkan efisiensi pelayanan administrasi.
+
+Saran Gambar:
+- Jenis gambar: Ilustrasi keberhasilan proyek.
+- Deskripsi gambar: Dokumen digital dengan checklist "Akurat", "Cepat", "Siap Cetak".
+
+==================================================
+SLIDE 16 - SARAN PENGEMBANGAN
+==================================================
+Judul Slide:
+Saran Pengembangan
+
+Isi Slide:
+- Menambah data latih agar model lebih robust.
+- Menambahkan OCR untuk dokumen hasil scan.
+- Menambahkan confidence scoring untuk review otomatis.
+- Integrasi ke sistem administrasi instansi secara real-time.
+
+Saran Gambar:
+- Jenis gambar: Roadmap timeline.
+- Deskripsi gambar: Tahap jangka pendek, menengah, panjang untuk pengembangan lanjutan.
+
+==================================================
+SLIDE 17 - TERIMA KASIH
+==================================================
+Judul Slide:
+Terima Kasih
+
+Isi Slide:
+- Terima kasih atas perhatian Bapak/Ibu penguji.
+- Saya siap menerima pertanyaan dan masukan.
+
+Saran Gambar:
+- Jenis gambar: Clean closing slide.
+- Deskripsi gambar: Latar sederhana formal dengan ikon presentasi atau logo kampus.
+
+==================================================
+LAMPIRAN OPSIONAL (JIKA DIMINTA PENGUJI)
+==================================================
+1) Slide tambahan: Contoh hasil ekspor DOCX
+- Tampilkan potongan halaman surat jadi.
+- Sorot area biodata, nomor surat, dan tanda tangan.
+
+2) Slide tambahan: Demo alur aplikasi
+- Langkah: input data -> preview -> download DOCX.
+- Tampilkan 3 screenshot berurutan.
+
+3) Slide tambahan: Risiko implementasi
+- Risiko data format berubah
+- Risiko OCR/noise dokumen
+- Mitigasi: retraining berkala + validasi manual

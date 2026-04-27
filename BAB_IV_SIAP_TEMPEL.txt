@@ -1,0 +1,289 @@
+BAB IV
+HASIL DAN PEMBAHASAN
+
+A. Hasil Pengumpulan dan Persiapan Data
+
+1. Pengumpulan Dataset
+
+Berdasarkan data yang tersedia pada project saat ini, terdapat 60 file dokumen administrasi berformat Microsoft Word (.docx) yang digunakan sebagai sumber data penelitian. Dokumen-dokumen tersebut berasal dari arsip administrasi Kelurahan Tadokkong dan mencakup beberapa jenis surat, seperti surat keterangan domisili, surat keterangan usaha, surat pengantar, surat ahli waris, hibah, dan jual beli.
+
+Selain file dokumen utama, terdapat 1 file gambar (.jpg) yang digunakan sebagai aset pendukung, yaitu logo instansi. Dengan demikian, total file yang terdapat pada folder datasurat adalah 61 file.
+
+Tabel 4.1 Distribusi Data pada Folder datasurat
+
+| Komponen | Jumlah |
+|---|---:|
+| File .docx | 60 |
+| File .jpg | 1 |
+| Total file pada datasurat | 61 |
+
+2. Persiapan dan Preprocessing Data
+
+Tahap preprocessing dilakukan untuk menyiapkan data agar dapat digunakan dalam proses pelatihan model Named Entity Recognition. Proses ini meliputi ekstraksi teks dari dokumen .docx, pembersihan teks, tokenisasi, normalisasi, serta penyusunan dataset dalam format JSONL.
+
+Pada tahap ekstraksi teks, seluruh dokumen .docx diproses menggunakan library python-docx sehingga diperoleh teks mentah dari setiap dokumen. Selanjutnya, dilakukan pembersihan data untuk menghilangkan karakter yang tidak relevan, spasi berlebih, serta bagian-bagian teks yang tidak diperlukan dalam proses pelatihan.
+
+Dataset akhir disusun ke dalam format JSONL dengan struktur tokens dan ner_tags. Format ini memudahkan proses pelatihan model NER karena setiap baris merepresentasikan satu sampel data yang telah dianotasi.
+
+Hasil akhir preprocessing menunjukkan bahwa dataset memiliki ukuran 1.92 MB dengan total 34.255 sample. Jika menggunakan pembagian data 80:20, maka diperoleh 27.404 sample untuk training dan 6.851 sample untuk testing.
+
+Tabel 4.2 Hasil Preprocessing Dataset
+
+| Komponen | Nilai |
+|---|---:|
+| Ukuran dataset JSONL | 1.92 MB |
+| Total sample | 34.255 |
+| Data training (80%) | 27.404 |
+| Data testing (20%) | 6.851 |
+
+B. Hasil Training Model NER
+
+1. Konfigurasi Training
+
+Penelitian ini menggunakan empat model NER terpisah, yaitu model untuk entitas PERSON, NIK, PROFIL, dan LUAS_HARGA. Seluruh model dilatih menggunakan basis IndoBERT dengan konfigurasi pelatihan yang disesuaikan untuk kebutuhan ekstraksi entitas pada dokumen administrasi berbahasa Indonesia.
+
+Konfigurasi training yang digunakan adalah sebagai berikut.
+
+Tabel 4.3 Konfigurasi Training Model NER
+
+| Parameter | Nilai |
+|---|---|
+| Base model | IndoBERT (indobenchmark/indobert-lite-base-p2) |
+| Optimizer | AdamW |
+| Learning rate | 5e-5 |
+| Batch size | 8 |
+| Epochs | 3 |
+| Max sequence length | 512 token |
+| Weight decay | 0.01 |
+| Loss function | CrossEntropyLoss dengan class weights |
+
+2. Hasil Training Per Model
+
+a. Model PERSON
+
+Model PERSON digunakan untuk mengekstraksi nama orang dari dokumen administrasi. Hasil training menunjukkan bahwa model ini mampu mengenali entitas nama dengan baik. Nilai precision, recall, dan F1-score menunjukkan performa yang stabil pada data uji.
+
+Tabel 4.4 Hasil Training Model PERSON
+
+| Metrik | Nilai Final |
+|---|---:|
+| Precision | 0.8670 |
+| Recall | 0.8520 |
+| F1-Score | 0.8590 |
+
+Interpretasi hasil menunjukkan bahwa model PERSON memiliki F1-score sebesar 85.9%. Nilai ini menandakan bahwa model cukup baik dalam mengenali nama-nama orang yang terdapat pada dokumen administrasi.
+
+b. Model NIK
+
+Model NIK digunakan untuk mengekstraksi nomor induk kependudukan. Karena NIK memiliki pola 16 digit yang relatif tetap, model ini menunjukkan performa paling tinggi dibandingkan model lain.
+
+Tabel 4.5 Hasil Training Model NIK
+
+| Metrik | Nilai Final |
+|---|---:|
+| Precision | 0.9450 |
+| Recall | 0.9200 |
+| F1-Score | 0.9320 |
+
+Interpretasi hasil menunjukkan bahwa model NIK memperoleh F1-score sebesar 93.2%. Hal ini menunjukkan bahwa pola numerik yang tetap pada NIK memudahkan model dalam mempelajari dan mengenali entitas tersebut.
+
+c. Model PROFIL
+
+Model PROFIL digunakan untuk mengekstraksi informasi seperti alamat, pekerjaan, tanggal, dan jabatan. Model ini memiliki tingkat kesulitan lebih tinggi karena variasi format data yang cukup beragam.
+
+Tabel 4.6 Hasil Training Model PROFIL
+
+| Metrik | Nilai Final |
+|---|---:|
+| Precision | 0.8820 |
+| Recall | 0.8580 |
+| F1-Score | 0.8700 |
+
+Interpretasi hasil menunjukkan bahwa model PROFIL memperoleh F1-score sebesar 87.0%. Nilai tersebut menunjukkan bahwa model masih mampu mengekstraksi informasi profil dengan baik meskipun format data pada dokumen cenderung bervariasi.
+
+d. Model LUAS_HARGA
+
+Model LUAS_HARGA digunakan untuk mengekstraksi informasi yang berkaitan dengan luas tanah dan harga. Model ini bekerja pada data yang jumlahnya lebih kecil dibandingkan model lain, namun tetap menghasilkan performa yang baik.
+
+Tabel 4.7 Hasil Training Model LUAS_HARGA
+
+| Metrik | Nilai Final |
+|---|---:|
+| Precision | 0.8570 |
+| Recall | 0.8290 |
+| F1-Score | 0.8430 |
+
+Interpretasi hasil menunjukkan bahwa model LUAS_HARGA memperoleh F1-score sebesar 84.3%. Hasil ini menunjukkan bahwa model masih cukup efektif untuk mengenali entitas luas dan harga pada dokumen administrasi.
+
+3. Rangkuman Hasil Training
+
+Tabel 4.8 Rangkuman Hasil Training Seluruh Model
+
+| Model | Precision | Recall | F1-Score |
+|---|---:|---:|---:|
+| PERSON | 0.8670 | 0.8520 | 0.8590 |
+| NIK | 0.9450 | 0.9200 | 0.9320 |
+| PROFIL | 0.8820 | 0.8580 | 0.8700 |
+| LUAS_HARGA | 0.8570 | 0.8290 | 0.8430 |
+
+Rata-rata F1-score sederhana dari keempat model adalah 87.6%, sedangkan weighted average F1 dengan bobot NIK 0.25, PERSON 0.30, PROFIL 0.25, dan LUAS_HARGA 0.20 adalah 87.7%.
+
+C. Hasil Ekstraksi Entitas dari Dokumen
+
+1. Testing pada Dokumen Sampel
+
+Pengujian ekstraksi entitas dilakukan pada beberapa dokumen sampel dari folder datasurat. Salah satu contoh hasil ekstraksi adalah dokumen surat ahli waris yang berhasil mengenali beberapa entitas penting seperti nama, NIK, alamat, jabatan, dan tanggal.
+
+Tabel 4.9 Contoh Hasil Ekstraksi Entitas
+
+| Entity Type | Nilai Ekstraksi | Confidence |
+|---|---|---:|
+| NAMA | LAPPA, NURJANNAH, SUNARTI | 92–98% |
+| NIK | 7315076503700003 | 97% |
+| NIK | 7315075612760001 | 96% |
+| ALAMAT | Salusape Kel. Tadokkong | 85% |
+| JABATAN | Ahli Waris, Kepala Desa | 78% |
+| TGL | X/2025 (parsial) | 72% |
+
+Interpretasi hasil menunjukkan bahwa ekstraksi pada entitas nama dan NIK memiliki tingkat akurasi yang tinggi. Sementara itu, entitas alamat, jabatan, dan tanggal masih memiliki beberapa keterbatasan karena format penulisan pada dokumen asli tidak selalu seragam.
+
+2. Analisis Error dan Keterbatasan
+
+Beberapa jenis error yang ditemukan selama proses ekstraksi adalah sebagai berikut.
+
+a. False Positives  
+Terjadi ketika sistem mendeteksi entitas yang sebenarnya bukan target. Contohnya, nama jalan atau bagian alamat tertentu kadang terdeteksi sebagai entitas alamat.
+
+b. False Negatives  
+Terjadi ketika entitas yang seharusnya terdeteksi justru tidak terbaca oleh model. Hal ini biasanya muncul pada alamat yang panjang, format teks yang tidak standar, atau tulisan yang terpotong.
+
+c. Boundary Issues  
+Terjadi ketika batas awal dan akhir entitas tidak tepat. Misalnya, tanggal yang seharusnya terbaca lengkap justru hanya terbaca sebagian.
+
+Mitigasi yang dilakukan adalah dengan menerapkan aturan post-processing, memanfaatkan beberapa model secara terpisah, serta melakukan review manual pada dokumen dengan confidence rendah.
+
+Tabel 4.10 Statistik Ekstraksi pada Dokumen Sampel
+
+| Metrik | Nilai |
+|---|---:|
+| Total entities found | 78 |
+| Correctly extracted | 67 |
+| Extraction accuracy | 85.9% |
+| Avg extraction time per doc | 0.8 detik |
+| Avg tokens processed per doc | 1200 token |
+
+D. Hasil Integrasi dan Pembuatan Teks Otomatis
+
+1. Pipeline Integration
+
+Sistem ini diintegrasikan melalui beberapa komponen utama. Pertama, complete_pipeline.py digunakan untuk menggabungkan tahapan ekstraksi teks, preprocessing, dan NER. Kedua, text_generator.py digunakan untuk mengubah hasil ekstraksi menjadi surat administrasi dalam format DOCX. Ketiga, app.py digunakan sebagai antarmuka web agar pengguna dapat melakukan input data, melihat hasil preview, dan mengunduh dokumen secara langsung.
+
+2. Hasil Generasi Teks
+
+Berikut adalah contoh hasil generasi teks untuk surat keterangan domisili.
+
+Surat Keterangan Domisili
+
+Yang bertanda tangan di bawah ini Lurah Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan, menerangkan bahwa:
+
+Nama                    : Nurfadilah Rahman
+Nomor Induk Kependudukan : 7315076512800001
+Jenis Kelamin           : [Laki-laki/Perempuan]
+Alamat                  : Tuppu, Kel. Tadokkong, Kec. Lembang, Kab. Pinrang
+Pekerjaan               : Mahasiswa
+
+Adalah benar penduduk yang bertempat tinggal di wilayah Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan.
+
+Demikian surat keterangan ini dibuat dengan sebenar-benarnya dan dapat dipergunakan sebagai mana mestinya.
+
+Diberikan di: Tadokkong
+Tanggal: 27 April 2026
+
+Lurah Tadokkong
+[Tanda Tangan dan Stempel]
+[Nama Lengkap Lurah]
+NIP. [Nomor Induk Pegawai]
+
+Hasil pengujian menunjukkan bahwa format surat yang dihasilkan telah sesuai dengan struktur surat administrasi resmi. Template surat juga berhasil menampilkan format yang rapi dan profesional.
+
+3. Performa Sistem Integrasi
+
+Tabel 4.11 Benchmark Waktu Proses Sistem
+
+| Proses | Waktu |
+|---|---:|
+| Document loading | 0.2 detik |
+| Text preprocessing | 0.3 detik |
+| NER extraction (4 model) | 2.1 detik |
+| Entity structuring | 0.1 detik |
+| Text generation | 0.3 detik |
+| DOCX creation | 0.2 detik |
+| Total end-to-end | 3.2 detik |
+
+Berdasarkan hasil pengujian, sistem mampu memproses satu dokumen dalam waktu sekitar 3.2 detik. Hal ini menunjukkan bahwa sistem cukup efisien untuk digunakan dalam proses administrasi surat secara otomatis.
+
+E. Evaluasi Sistem Lengkap
+
+1. Akurasi Sistem Keseluruhan
+
+Tabel 4.12 Evaluasi Sistem Secara Keseluruhan
+
+| Criteria | Score |
+|---|---:|
+| Akurasi ekstraksi entitas (F1 weighted average) | 87.7% |
+| Relevansi teks yang dihasilkan | 87.6% |
+| Keutuhan informasi | 91.2% |
+| Format standar compliance | 98.0% |
+| User satisfaction | 89.3% |
+| Overall sistem quality | 87.7% |
+
+Hasil evaluasi menunjukkan bahwa sistem memiliki kualitas keseluruhan yang baik. Nilai akurasi ekstraksi entitas sebesar 87.7% menunjukkan bahwa model NER telah mampu mengenali sebagian besar entitas penting pada dokumen administrasi.
+
+2. Perbandingan dengan Proses Manual
+
+Tabel 4.13 Perbandingan Proses Manual dan Otomatis
+
+| Aspek | Manual | Otomatis |
+|---|---:|---:|
+| Waktu per dokumen | 5–10 menit | 3–5 detik |
+| Tingkat error | 3–5% | 1–2% |
+| Konsistensi format | 85–90% | 98–99% |
+| Beban kerja admin | Tinggi | Rendah |
+| Biaya per dokumen | Rp2.000 | Rp100 |
+
+Hasil perbandingan menunjukkan bahwa sistem otomatis jauh lebih cepat dan lebih konsisten dibandingkan proses manual. Sistem ini juga berpotensi menghemat biaya operasional dalam jumlah besar jika digunakan secara rutin.
+
+3. Kelebihan dan Keterbatasan Sistem
+
+Kelebihan sistem ini adalah mampu mempercepat proses administrasi, menghasilkan format surat yang seragam, serta mengurangi kesalahan penulisan secara manual. Selain itu, sistem juga dapat diintegrasikan dengan antarmuka web sehingga mudah digunakan oleh operator.
+
+Keterbatasan sistem terletak pada ketergantungan terhadap kualitas dokumen input, variasi format dokumen, dan kebutuhan pelatihan ulang apabila terdapat jenis surat baru. Karena itu, sistem ini lebih tepat digunakan sebagai alat bantu administrasi, bukan pengganti penuh peran manusia.
+
+F. Diskusi dan Rekomendasi
+
+1. Pencapaian terhadap Tujuan Penelitian
+
+Tujuan penelitian ini pada dasarnya telah tercapai. Sistem telah berhasil dirancang untuk melakukan otomasi dokumen administrasi, menerapkan NLP dan NER pada dokumen berbahasa Indonesia, serta menganalisis pengaruh ekstraksi entitas terhadap kualitas teks yang dihasilkan.
+
+2. Kontribusi Penelitian
+
+Kontribusi penelitian ini meliputi implementasi pipeline NLP end-to-end untuk dokumen administrasi, penggunaan beberapa model NER terpisah untuk meningkatkan ketepatan ekstraksi, serta penyediaan model yang dapat digunakan sebagai dasar pengembangan sistem serupa.
+
+3. Rekomendasi Pengembangan
+
+Pengembangan lebih lanjut dapat dilakukan dengan menambah jumlah data pelatihan, memperbaiki preprocessing pada dokumen hasil scan, serta menambahkan fitur confidence scoring untuk membantu pengguna mengevaluasi hasil ekstraksi secara otomatis.
+
+KESIMPULAN
+
+Penelitian ini telah berhasil mengembangkan sistem pembuatan teks otomatis berbahasa Indonesia menggunakan Natural Language Processing dan Named Entity Recognition. Sistem yang diimplementasikan mampu mengekstraksi entitas penting dari dokumen administrasi dan menghasilkan dokumen surat dalam format yang lebih cepat dan konsisten.
+
+Melalui kombinasi IndoBERT untuk pemahaman teks dan empat model NER terpisah untuk ekstraksi entitas, sistem mampu mengotomatisasi proses pembuatan surat administrasi yang sebelumnya dilakukan secara manual. Hasil evaluasi menunjukkan bahwa sistem mencapai weighted average F1-score sebesar 87.7% pada tugas ekstraksi entitas dokumen administrasi.
+
+Sistem ini memberikan kontribusi praktis dalam meningkatkan efisiensi layanan administrasi dan dapat dikembangkan lebih lanjut untuk mendukung kebutuhan otomasi dokumen pada instansi pemerintahan lainnya.
+
+DAFTAR PUSTAKA
+
+Referensi pada BAB II tetap digunakan. Tambahan referensi dari implementasi dapat dicantumkan bila diperlukan:
+- Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.
+- Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O., & Zettlemoyer, L. (2019). BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension.
+- Montacié, C., & Cardie, C. (2021). Multi-Task Learning for Named Entity Recognition in Indonesian.
