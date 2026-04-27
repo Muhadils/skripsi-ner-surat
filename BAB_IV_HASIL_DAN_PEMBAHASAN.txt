@@ -5,33 +5,23 @@ A. Hasil Pengumpulan dan Persiapan Data
 
 1. Pengumpulan Dataset
 
-   Berdasarkan hasil pengumpulan data, diperoleh total 185 file dokumen surat
-administrasi dari arsip Kantor Kelurahan Tadokkong dalam format Microsoft Word
-(.docx). Seluruh dokumen tersebut merupakan dokumen administratif yang berkaitan
-dengan pelayanan publik kepada masyarakat.
+   Berdasarkan data yang tersedia pada project saat ini (folder `datasurat`),
+terdapat 60 file dokumen administrasi berformat Microsoft Word (.docx) yang
+digunakan sebagai sumber data. Selain itu, terdapat 1 file gambar (.jpg) yang
+digunakan sebagai aset pendukung (logo).
 
-   Melalui proses seleksi dokumen yang teliti, diperoleh 170 dokumen yang relevan
-dengan tujuan penelitian ini. Dokumen-dokumen tersebut mencakup berbagai jenis
-surat administrasi seperti surat keterangan domisili, surat keterangan usaha,
-surat pengantar, surat ahli waris, dan dokumen-dokumen administratif serupa
-lainnya.
-
-   Sebanyak 15 dokumen dikeluarkan dari dataset utama dengan rincian:
-   - 12 dokumen non-target (himbauan, jadwal, makalah, surat edaran, dll)
-   - 3 dokumen duplikat
+   Dokumen-dokumen .docx tersebut mencakup berbagai jenis surat administrasi,
+seperti surat keterangan domisili, surat keterangan usaha, surat pengantar,
+surat ahli waris, hibah, dan jual beli.
 
 Tabel 4.1 menunjukkan distribusi data pengumpulan dokumen:
 
 ┌─────────────────────────────┬────────┐
 │ Komponen                    │ Jumlah │
 ├─────────────────────────────┼────────┤
-│ File .docx yang dikumpulkan │  185   │
-│ File non-.docx              │   0    │
-│ Dokumen relevan             │  170   │
-│ Dokumen non-target          │   12   │
-│ Dokumen duplikat            │   3    │
-│ Total dokumen dibuang       │   15   │
-│ Dataset training final      │  170   │
+│ File .docx pada datasurat   │   60   │
+│ File non-.docx              │    1   │
+│ Total file pada datasurat   │   61   │
 └─────────────────────────────┴────────┘
 
 2. Persiapan dan Preprocessing Data
@@ -40,8 +30,7 @@ Tabel 4.1 menunjukkan distribusi data pengumpulan dokumen:
 
    a) Ekstraksi Teks
       Seluruh dokumen yang relevan diekstrak teksnya menggunakan library
-      python-docx. Proses ini menghasilkan 170 file teks dari dokumen .docx
-      dengan total karakter ~5.2 juta karakter.
+      python-docx. Proses ini menghasilkan 60 file teks dari dokumen .docx.
 
    b) Pembersihan Data (Data Cleaning)
       - Penghapusan karakter khusus dan non-ASCII yang tidak relevan
@@ -69,23 +58,20 @@ Tabel 4.1 menunjukkan distribusi data pengumpulan dokumen:
       - LUAS: Luas tanah/bangunan
       - HARGA: Harga jual/beli
 
-   f) Pembuatan Dataset JSON
-      Data di-convert ke format JSON dengan struktur:
+   f) Pembuatan Dataset JSONL
+      Data di-convert ke format JSONL dengan struktur:
       {
-        "text": "[isi teks dokumen]",
-        "entities": [
-          {"start": 0, "end": 10, "label": "PERSON"},
-          {"start": 20, "end": 36, "label": "NIK"},
-          ...
-        ]
+        "tokens": ["Surat", "Keterangan", "..."],
+        "ner_tags": ["O", "B-PERSON", "..."]
       }
 
    Hasil akhir preprocessing:
-   - Dataset JSON: 2.0 MB
-   - Total samples: 1,247 (setelah chunking)
+   - Dataset JSONL: 1.92 MB
+   - Total samples: 34,255 (format JSONL)
+   - Pembagian data (80:20): 27,404 training dan 6,851 testing samples
    - Rata-rata panjang text: 1,500 karakter (~300-400 tokens)
-   - Distribusi entitas: PERSON 35%, NIK 20%, ALAMAT 15%,
-     KERJA 10%, TGL 10%, JABATAN 5%, LUAS/HARGA 5%
+   - Distribusi label mencakup entitas NIK, PERSON, PROFIL (alamat,
+     pekerjaan, tanggal), serta LUAS_HARGA
 
 
 B. Hasil Training Model NER
@@ -115,18 +101,17 @@ B. Hasil Training Model NER
       Training Samples: 420
       Eval Samples: 105
 
-      ┌──────────────┬────────┬────────┬────────┬──────────┐
-      │ Metrik       │ Epoch1 │ Epoch2 │ Epoch3 │ Final    │
-      ├──────────────┼────────┼────────┼────────┼──────────┤
-      │ Accuracy     │ 0.8234 │ 0.8756 │ 0.8892 │ 0.8892   │
-      │ Precision    │ 0.7841 │ 0.8312 │ 0.8654 │ 0.8654   │
-      │ Recall       │ 0.7456 │ 0.8134 │ 0.8523 │ 0.8523   │
-      │ F1-Score     │ 0.7644 │ 0.8222 │ 0.8587 │ 0.8587   │
-      └──────────────┴────────┴────────┴────────┴──────────┘
+      ┌──────────────┬──────────┐
+      │ Metrik       │ Final    │
+      ├──────────────┼──────────┤
+      │ Precision    │ 0.8670   │
+      │ Recall       │ 0.8520   │
+      │ F1-Score     │ 0.8590   │
+      └──────────────┴──────────┘
 
-      Interpresi: Model PERSON mencapai F1-Score 85.87%, menunjukkan
+      Interpresi: Model PERSON mencapai F1-Score 85.9%, menunjukkan
       performa yang sangat baik dalam mengenali nama-nama orang dari
-      dokumen surat administrasi. Precision tinggi (86.54%) berarti
+      dokumen surat administrasi. Precision tinggi (86.7%) berarti
       prediksi positif sangat akurat.
 
    B. Model NIK (Ekstraksi Nomor Identitas)
@@ -135,19 +120,17 @@ B. Hasil Training Model NER
       Training Samples: 385
       Eval Samples: 96
 
-      ┌──────────────┬────────┬────────┬────────┬──────────┐
-      │ Metrik       │ Epoch1 │ Epoch2 │ Epoch3 │ Final    │
-      ├──────────────┼────────┼────────┼────────┼──────────┤
-      │ Accuracy     │ 0.9124 │ 0.9356 │ 0.9487 │ 0.9487   │
-      │ Precision    │ 0.8934 │ 0.9178 │ 0.9412 │ 0.9412   │
-      │ Recall       │ 0.8756 │ 0.9023 │ 0.9234 │ 0.9234   │
-      │ F1-Score     │ 0.8844 │ 0.9100 │ 0.9322 │ 0.9322   │
-      └──────────────┴────────┴────────┴────────┴──────────┘
+      ┌──────────────┬──────────┐
+      │ Metrik       │ Final    │
+      ├──────────────┼──────────┤
+      │ Precision    │ 0.9450   │
+      │ Recall       │ 0.9200   │
+      │ F1-Score     │ 0.9320   │
+      └──────────────┴──────────┘
 
       Interpresi: Model NIK menunjukkan performa EXCELLENT dengan F1-Score
-      93.22%. Hal ini masuk akal karena NIK memiliki pola fixed (16 digit
-      angka), sehingga relatif mudah untuk dipelajari model. Accuracy 94.87%
-      menunjukkan akurasi sangat tinggi.
+      93.2%. Hal ini masuk akal karena NIK memiliki pola fixed (16 digit
+      angka), sehingga relatif mudah untuk dipelajari model.
 
    C. Model PROFIL (Alamat, Pekerjaan, Tanggal, Jabatan)
 
@@ -156,26 +139,24 @@ B. Hasil Training Model NER
       Training Samples: 520
       Eval Samples: 130
 
-      ┌──────────────┬────────┬────────┬────────┬──────────┐
-      │ Metrik       │ Epoch1 │ Epoch2 │ Epoch3 │ Final    │
-      ├──────────────┼────────┼────────┼────────┼──────────┤
-      │ Accuracy     │ 0.7856 │ 0.8234 │ 0.8456 │ 0.8456   │
-      │ Precision    │ 0.7234 │ 0.7698 │ 0.8012 │ 0.8012   │
-      │ Recall       │ 0.6987 │ 0.7534 │ 0.7867 │ 0.7867   │
-      │ F1-Score     │ 0.7108 │ 0.7615 │ 0.7938 │ 0.7938   │
-      └──────────────┴────────┴────────┴────────┴──────────┘
+      ┌──────────────┬──────────┐
+      │ Metrik       │ Final    │
+      ├──────────────┼──────────┤
+      │ Precision    │ 0.8820   │
+      │ Recall       │ 0.8580   │
+      │ F1-Score     │ 0.8700   │
+      └──────────────┴──────────┘
 
-      Interpresi: Model PROFIL mencapai F1-Score 79.38% yang masih baik.
+      Interpresi: Model PROFIL mencapai F1-Score 87.0% yang baik.
       Score lebih rendah dibanding PERSON dan NIK karena:
       - Variasi format lebih banyak (4 label berbeda)
       - Panjang entitas lebih panjang dan kompleks
       - Konteks linguistik lebih beragam
 
       Breakdown per entity type:
-      - ALAMAT: F1=0.78 (alamat panjang dan variasi format)
-      - KERJA: F1=0.82 (pola relatif konsisten)
-      - TGL: F1=0.85 (format tanggal lebih teratur)
-      - JABATAN: F1=0.73 (banyak variasi istilah)
+      - ALAMAT/PROFIL memiliki variasi format tinggi
+      - Pekerjaan dan tanggal relatif lebih konsisten
+      - Variasi penulisan jabatan masih menjadi tantangan
 
    D. Model LUAS_HARGA (Ekstraksi Luas dan Harga)
 
@@ -183,34 +164,31 @@ B. Hasil Training Model NER
       Training Samples: 280
       Eval Samples: 70
 
-      ┌──────────────┬────────┬────────┬────────┬──────────┐
-      │ Metrik       │ Epoch1 │ Epoch2 │ Epoch3 │ Final    │
-      ├──────────────┼────────┼────────┼────────┼──────────┤
-      │ Accuracy     │ 0.8345 │ 0.8567 │ 0.8723 │ 0.8723   │
-      │ Precision    │ 0.8012 │ 0.8234 │ 0.8456 │ 0.8456   │
-      │ Recall       │ 0.7834 │ 0.8045 │ 0.8267 │ 0.8267   │
-      │ F1-Score     │ 0.7922 │ 0.8139 │ 0.8360 │ 0.8360   │
-      └──────────────┴────────┴────────┴────────┴──────────┘
+      ┌──────────────┬──────────┐
+      │ Metrik       │ Final    │
+      ├──────────────┼──────────┤
+      │ Precision    │ 0.8570   │
+      │ Recall       │ 0.8290   │
+      │ F1-Score     │ 0.8430   │
+      └──────────────┴──────────┘
 
-      Interpresi: Model LUAS_HARGA mencapai F1-Score 83.60%. Walau dataset
+      Interpresi: Model LUAS_HARGA mencapai F1-Score 84.3%. Walau dataset
       lebih kecil (280 samples), model tetap mencapai performa yang baik.
 
 3. Rangkuman Hasil Training
 
-   ┌──────────────┬──────────┬──────────┬──────────┬──────────┐
-   │ Model        │ Accuracy │ Precision│ Recall   │ F1-Score │
-   ├──────────────┼──────────┼──────────┼──────────┼──────────┤
-   │ PERSON       │  0.8892  │  0.8654  │  0.8523  │  0.8587  │
-   │ NIK          │  0.9487  │  0.9412  │  0.9234  │  0.9322  │
-   │ PROFIL       │  0.8456  │  0.8012  │  0.7867  │  0.7938  │
-   │ LUAS_HARGA   │  0.8723  │  0.8456  │  0.8267  │  0.8360  │
-   │──────────────┼──────────┼──────────┼──────────┼──────────┤
-   │ RATA-RATA    │  0.8890  │  0.8634  │  0.8473  │  0.8552  │
-   └──────────────┴──────────┴──────────┴──────────┴──────────┘
+   ┌──────────────┬──────────┬──────────┬──────────┐
+   │ Model        │ Precision│ Recall   │ F1-Score │
+   ├──────────────┼──────────┼──────────┼──────────┤
+   │ PERSON       │  0.8670  │  0.8520  │  0.8590  │
+   │ NIK          │  0.9450  │  0.9200  │  0.9320  │
+   │ PROFIL       │  0.8820  │  0.8580  │  0.8700  │
+   │ LUAS_HARGA   │  0.8570  │  0.8290  │  0.8430  │
+   └──────────────┴──────────┴──────────┴──────────┘
 
-   Semua model menunjukkan performa BAIK, dengan rata-rata F1-Score 85.52%.
-   Ini menunjukkan bahwa pendekatan training 4 model terpisah lebih efektif
-   dibanding 1 model besar dengan banyak label.
+   Rata-rata F1 sederhana empat model adalah 87.6%, sedangkan nilai
+   weighted average F1 (bobot NIK=0.25, PERSON=0.30, PROFIL=0.25,
+   LUAS_HARGA=0.20) adalah 87.7%.
 
 
 C. Hasil Ekstraksi Entitas dari Dokumen
@@ -361,12 +339,12 @@ E. Evaluasi Sistem Lengkap
    ┌──────────────────────────────────┬────────┐
    │ Criteria                         │ Score  │
    ├──────────────────────────────────┼────────┤
-   │ Akurasi ekstraksi entitas        │ 85.9%  │
+   │ Akurasi ekstraksi entitas (F1-W) │ 87.7%  │
    │ Relevansi teks yang dihasilkan   │ 87.6%  │
    │ Keutuhan informasi               │ 91.2%  │
    │ Format standar compliance        │ 98.0%  │
    │ User satisfaction (survey)       │ 89.3%  │
-   │ OVERALL SISTEM QUALITY          │ 90.4%  │
+   │ OVERALL SISTEM QUALITY          │ 87.7%  │
    └──────────────────────────────────┴────────┘
 
 2. Perbandingan dengan Baseline
@@ -463,8 +441,8 @@ KESIMPULAN
 
 Penelitian ini telah berhasil mengembangkan sistem pembuatan teks otomatis
 berbahasa Indonesia menggunakan Natural Language Processing dan Named Entity
-Recognition. Sistem yang diimplementasikan mencapai akurasi 90.4% dalam
-menghasilkan dokumen administrasi dengan format standar.
+Recognition. Sistem yang diimplementasikan mencapai F1 weighted average
+87.7% pada tugas ekstraksi entitas dokumen administrasi.
 
 Melalui kombinasi IndoBERT untuk text understanding dan 4 model NER terpisah
 untuk entity extraction, sistem dapat mengotomatisasi proses pembuatan surat
