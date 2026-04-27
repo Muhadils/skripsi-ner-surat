@@ -126,8 +126,6 @@ Nama                    : {entities.get('nama', 'Nama Lengkap')}
 
     Adalah benar penduduk yang bertempat tinggal di wilayah Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan.
 
-Surat keterangan ini diberikan untuk keperluan: {entities.get('maksud_tujuan', '[Sebutkan Keperluan]')}
-
 Demikian surat keterangan ini dibuat dengan sebenar-benarnya dan dapat dipergunakan sebagai mana mestinya.
 
 Diberikan di: Tadokkong
