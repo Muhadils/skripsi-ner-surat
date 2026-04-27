@@ -324,6 +324,8 @@ NIP. [Nomor Induk Pegawai]"""
                 run2.font.size = Pt(12)
                 run3 = header_paragraph.add_run("\nJl. Poros Tadokkong, Kecamatan Lembang, Kabupaten Pinrang")
                 run3.font.size = Pt(10)
+                run4 = header_paragraph.add_run("\nKode Pos 91255")
+                run4.font.size = Pt(10)
 
                 line = doc.add_paragraph("=" * 60)
                 line.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
@@ -337,12 +339,13 @@ NIP. [Nomor Induk Pegawai]"""
                 "PEMERINTAH KELURAHAN TADOKKONG",
                 "KECAMATAN LEMBANG KABUPATEN PINRANG",
                 "Jl. Poros Tadokkong, Kecamatan Lembang, Kabupaten Pinrang",
+                "Kode Pos 91255",
             ]
 
             for idx, header_line in enumerate(header_lines):
                 p = doc.add_paragraph(header_line)
                 p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-                p.paragraph_format.space_after = Pt(0 if idx < len(header_lines) - 1 else 2)
+                p.paragraph_format.space_after = Pt(0 if idx < len(header_lines) - 1 else 1)
                 run = p.runs[0]
                 run.bold = True if idx < 2 else False
                 run.font.size = Pt(11 if idx < 2 else 9)
