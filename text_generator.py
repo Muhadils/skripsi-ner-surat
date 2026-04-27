@@ -13,6 +13,9 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 from docx import Document
 from docx.shared import Pt, Inches, Cm
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+from docx.image.exceptions import UnrecognizedImageError
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 import re
 
 class SuratAutomatisGenerator:
@@ -299,33 +302,39 @@ NIP. [Nomor Induk Pegawai]"""
         logo_path = self._find_logo_path()
 
         if logo_path:
-            table = doc.add_table(rows=1, cols=2)
-            table.autofit = False
-            left_cell, right_cell = table.rows[0].cells
-            left_cell.width = Cm(3.0)
-            right_cell.width = Cm(13.0)
+            try:
+                table = doc.add_table(rows=1, cols=2)
+                table.autofit = False
+                self._remove_table_borders(table)
+                left_cell, right_cell = table.rows[0].cells
+                left_cell.width = Cm(3.0)
+                right_cell.width = Cm(13.0)
 
-            logo_paragraph = left_cell.paragraphs[0]
-            logo_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-            logo_run = logo_paragraph.add_run()
-            logo_run.add_picture(logo_path, width=Inches(1.15))
+                logo_paragraph = left_cell.paragraphs[0]
+                logo_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+                logo_run = logo_paragraph.add_run()
+                logo_run.add_picture(logo_path, width=Inches(1.15))
 
-            header_paragraph = right_cell.paragraphs[0]
-            header_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-            header_paragraph.paragraph_format.space_after = Pt(0)
-            run1 = header_paragraph.add_run("PEMERINTAH KELURAHAN TADOKKONG")
-            run1.bold = True
-            run1.font.size = Pt(12)
-            run2 = header_paragraph.add_run("\nKECAMATAN LEMBANG KABUPATEN PINRANG")
-            run2.bold = True
-            run2.font.size = Pt(12)
-            run3 = header_paragraph.add_run("\nJl. Poros Tadokkong, Kecamatan Lembang, Kabupaten Pinrang")
-            run3.font.size = Pt(10)
+                header_paragraph = right_cell.paragraphs[0]
+                header_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+                header_paragraph.paragraph_format.space_after = Pt(0)
+                run1 = header_paragraph.add_run("PEMERINTAH KELURAHAN TADOKKONG")
+                run1.bold = True
+                run1.font.size = Pt(12)
+                run2 = header_paragraph.add_run("\nKECAMATAN LEMBANG KABUPATEN PINRANG")
+                run2.bold = True
+                run2.font.size = Pt(12)
+                run3 = header_paragraph.add_run("\nJl. Poros Tadokkong, Kecamatan Lembang, Kabupaten Pinrang")
+                run3.font.size = Pt(10)
 
-            line = doc.add_paragraph("=" * 60)
-            line.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-            line.paragraph_format.space_after = Pt(6)
-        else:
+                line = doc.add_paragraph("=" * 60)
+                line.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+                line.paragraph_format.space_after = Pt(6)
+            except (UnrecognizedImageError, OSError, ValueError):
+                # Fall back to text-only header when logo file is invalid/corrupt.
+                logo_path = None
+
+        if not logo_path:
             header_lines = [
                 "PEMERINTAH KELURAHAN TADOKKONG",
                 "KECAMATAN LEMBANG KABUPATEN PINRANG",
@@ -412,6 +421,24 @@ NIP. [Nomor Induk Pegawai]"""
             if os.path.exists(candidate):
                 return candidate
         return None
+
+    def _remove_table_borders(self, table):
+        """Remove visible borders from the header table so the letterhead looks clean."""
+        tbl_pr = table._tbl.tblPr
+        tbl_borders = tbl_pr.first_child_found_in("w:tblBorders")
+        if tbl_borders is None:
+            tbl_borders = OxmlElement("w:tblBorders")
+            tbl_pr.append(tbl_borders)
+
+        for edge in ("top", "left", "bottom", "right", "insideH", "insideV"):
+            edge_el = tbl_borders.find(qn(f"w:{edge}"))
+            if edge_el is None:
+                edge_el = OxmlElement(f"w:{edge}")
+                tbl_borders.append(edge_el)
+            edge_el.set(qn("w:val"), "nil")
+            edge_el.set(qn("w:sz"), "0")
+            edge_el.set(qn("w:space"), "0")
+            edge_el.set(qn("w:color"), "auto")
 
     def process_surat(self,surat_type, entities):
         """Process and generate specific surat type"""
