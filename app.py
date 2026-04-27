@@ -9,8 +9,6 @@ import os
 import sys
 from pathlib import Path
 from text_generator import SuratAutomatisGenerator
-from docx import Document
-from io import BytesIO
 import json
 from datetime import datetime
 
@@ -477,16 +475,8 @@ def api_download():
         # Generate content
         content = generator.process_surat(surat_type, entities)
 
-        # Create DOCX
-        doc = Document()
-        for line in content.split('\n'):
-            p = doc.add_paragraph(line)
-            p.paragraph_format.line_spacing = 1.5
-
-        # Save to bytes
-        output = BytesIO()
-        doc.save(output)
-        output.seek(0)
+        # Create polished DOCX format
+        output = generator.create_docx_bytes(content)
 
         return send_file(
             output,

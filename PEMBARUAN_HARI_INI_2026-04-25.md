@@ -23,3 +23,6 @@ Hari ini fokus pekerjaan berada pada validasi alur utama sistem NER surat dan ke
 - Rapikan artefak training yang tidak dibutuhkan (khususnya folder checkpoint lama) agar struktur proyek lebih ringan.
 - Tetapkan daftar file final yang dipertahankan untuk kebutuhan demo dan penulisan skripsi.
 - Lakukan satu kali uji akhir dari web app sampai file hasil unduhan untuk memastikan alur presentasi berjalan mulus.
+- Finalisasi format DOCX supaya lebih resmi, termasuk kop surat, nomor surat, perihal, dan blok tanda tangan.
+- Seragamkan template surat untuk jenis Domisili, Usaha, dan Pengantar agar hasil cetak konsisten.
+- Simpan satu file DOCX uji terakhir sebagai referensi visual hasil akhir sebelum demo atau sidang.

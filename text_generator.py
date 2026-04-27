@@ -7,9 +7,11 @@ Skripsi Nurfadilah Rahman - Pembuatan Teks Otomatis
 import json
 import torch
 import os
+from datetime import datetime
+from io import BytesIO
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 from docx import Document
-from docx.shared import Pt, Inches
+from docx.shared import Pt, Inches, Cm
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 import re
 
@@ -111,15 +113,15 @@ class SuratAutomatisGenerator:
         """Generate Surat Keterangan Domisili"""
         template = f"""Surat Keterangan Domisili
 
-Yang bertanda tangan di bawah ini Lurah Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan, dengan ini menerangkan bahwa:
+    Yang bertanda tangan di bawah ini Lurah Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan, menerangkan bahwa:
 
 Nama                    : {entities.get('nama', 'Nama Lengkap')}
-Nomor Induk Kependudukan: {entities.get('nik', '0000000000000000')}
-Jenis Kelamin          : [Laki-laki/Perempuan]
-Alamat                 : {entities.get('alamat', 'Alamat, Kelurahan, Kecamatan, Kabupaten')}
-Pekerjaan              : {entities.get('pekerjaan', 'Pekerjaan/Profesi')}
+    Nomor Induk Kependudukan : {entities.get('nik', '0000000000000000')}
+    Jenis Kelamin           : [Laki-laki/Perempuan]
+    Alamat                  : {entities.get('alamat', 'Alamat, Kelurahan, Kecamatan, Kabupaten')}
+    Pekerjaan               : {entities.get('pekerjaan', 'Pekerjaan/Profesi')}
 
-Adalah benar penduduk yang bertempat tinggal di wilayah kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan.
+    Adalah benar penduduk yang bertempat tinggal di wilayah Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Provinsi Sulawesi Selatan.
 
 Surat keterangan ini diberikan untuk keperluan: [Sebutkan Keperluan]
 
@@ -138,14 +140,14 @@ NIP. [Nomor Induk Pegawai]"""
         """Generate Surat Keterangan Usaha"""
         template = f"""Surat Keterangan Usaha
 
-Yang bertanda tangan di bawah ini Lurah Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, menerangkan bahwa:
+    Yang bertanda tangan di bawah ini Lurah Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, menerangkan bahwa:
 
 Nama                    : {entities.get('nama', 'Nama Lengkap')}
-Nomor Induk Kependudukan: {entities.get('nik', '0000000000000000')}
-Alamat                 : {entities.get('alamat', 'Alamat')}
-Pekerjaan/Usaha        : {entities.get('pekerjaan', 'Jenis Usaha')}
+    Nomor Induk Kependudukan : {entities.get('nik', '0000000000000000')}
+    Alamat                  : {entities.get('alamat', 'Alamat')}
+    Pekerjaan/Usaha         : {entities.get('pekerjaan', 'Jenis Usaha')}
 
-Adalah benar memiliki usaha di Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang dan layak diberikan surat keterangan usaha untuk keperluan: [Sebutkan Keperluan]
+    Adalah benar memiliki usaha di wilayah Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang dan layak diberikan surat keterangan usaha untuk keperluan: [Sebutkan Keperluan]
 
 Surat keterangan ini berlaku selama 1 (satu) tahun apabila diperlukan dapat diperpanjang kembali.
 
@@ -167,14 +169,14 @@ NIP. [Nomor Induk Pegawai]"""
 Kepada Yth. [Instansi Tujuan]
 di Tempat
 
-Dengan hormat, yang bertanda tangan di bawah ini Lurah Tadokkong dengan ini menerangkan bahwa:
+    Dengan hormat, yang bertanda tangan di bawah ini Lurah Tadokkong menerangkan bahwa:
 
 Nama                    : {entities.get('nama', 'Nama Lengkap')}
-Nomor Induk Kependudukan: {entities.get('nik', '0000000000000000')}
-Jenis Kelamin          : [Laki-laki/Perempuan]
-Alamat                 : {entities.get('alamat', 'Alamat')}
+    Nomor Induk Kependudukan : {entities.get('nik', '0000000000000000')}
+    Jenis Kelamin           : [Laki-laki/Perempuan]
+    Alamat                  : {entities.get('alamat', 'Alamat')}
 
-Adalah benar penduduk Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Sulawesi Selatan dan untuk keperluan:
+    Adalah benar penduduk Kelurahan Tadokkong, Kecamatan Lembang, Kabupaten Pinrang, Sulawesi Selatan dan memerlukan surat ini untuk keperluan:
 
 [Sebutkan Maksud dan Tujuan]
 
@@ -193,16 +195,223 @@ NIP. [Nomor Induk Pegawai]"""
 
     def save_to_docx(self, text, filename):
         """Save generated text to DOCX file"""
-        doc = Document()
-
-        # Add content
-        for line in text.split('\n'):
-            p = doc.add_paragraph(line)
-            p.paragraph_format.line_spacing = 1.5
-            p.paragraph_format.space_after = Pt(6)
-
+        doc = self.create_docx_document(text)
         doc.save(filename)
         print(f"✓ Saved to {filename}")
+
+    def create_docx_bytes(self, text):
+        """Build DOCX and return bytes for web download."""
+        doc = self.create_docx_document(text)
+        output = BytesIO()
+        doc.save(output)
+        output.seek(0)
+        return output
+
+    def create_docx_document(self, text):
+        """Create polished DOCX format for surat administratif."""
+        doc = Document()
+
+        # Global page layout
+        section = doc.sections[0]
+        section.top_margin = Inches(1.0)
+        section.bottom_margin = Inches(1.0)
+        section.left_margin = Inches(1.25)
+        section.right_margin = Inches(1.0)
+
+        style = doc.styles["Normal"]
+        style.font.name = "Times New Roman"
+        style.font.size = Pt(12)
+
+        lines = text.split("\n")
+        signature_mode = False
+        surat_title = None
+        title_skipped = False
+
+        for raw_line in lines:
+            candidate = raw_line.strip()
+            if candidate:
+                surat_title = candidate
+                break
+
+        self._add_letterhead(doc, surat_title)
+
+        for raw_line in lines:
+            line = raw_line.strip()
+
+            if not line:
+                spacer = doc.add_paragraph("")
+                spacer.paragraph_format.space_after = Pt(3)
+                continue
+
+            if not title_skipped:
+                title_skipped = True
+                continue
+
+            if line.startswith("Diberikan di:") or line.startswith("Tanggal:"):
+                p = doc.add_paragraph(line)
+                p.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+                p.paragraph_format.space_after = Pt(2)
+                signature_mode = True
+                continue
+
+            if line in {"[Tanda Tangan dan Stempel]"}:
+                spacer = doc.add_paragraph("")
+                spacer.paragraph_format.space_after = Pt(12)
+                line_block = doc.add_paragraph("______________________________")
+                line_block.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+                line_block.paragraph_format.space_after = Pt(6)
+                continue
+
+            if line in {"Lurah Tadokkong", "[Nama Lengkap Lurah]", "[Nomor Induk Pegawai]"}:
+                p = doc.add_paragraph(line)
+                p.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+                p.paragraph_format.space_after = Pt(2)
+                if line in {"Lurah Tadokkong", "[Nama Lengkap Lurah]"}:
+                    p.runs[0].bold = True
+                continue
+
+            if self._is_biodata_line(line):
+                label, value = [part.strip() for part in line.split(":", 1)]
+                p = doc.add_paragraph()
+                p.paragraph_format.line_spacing = 1.3
+                p.paragraph_format.space_after = Pt(2)
+                p.paragraph_format.tab_stops.add_tab_stop(Inches(2.75))
+                p.add_run(self._format_biodata_label(label))
+                p.add_run("\t: ")
+                p.add_run(value)
+                continue
+
+            p = doc.add_paragraph(line)
+            p.paragraph_format.line_spacing = 1.3
+            p.paragraph_format.space_after = Pt(6)
+
+            if signature_mode:
+                p.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+            elif line.startswith("Kepada Yth") or line == "di Tempat":
+                p.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
+            else:
+                p.alignment = WD_PARAGRAPH_ALIGNMENT.JUSTIFY
+
+        return doc
+
+    def _add_letterhead(self, doc, surat_title):
+        """Add a simple formal letterhead to the document."""
+        logo_path = self._find_logo_path()
+
+        if logo_path:
+            table = doc.add_table(rows=1, cols=2)
+            table.autofit = False
+            left_cell, right_cell = table.rows[0].cells
+            left_cell.width = Cm(3.0)
+            right_cell.width = Cm(13.0)
+
+            logo_paragraph = left_cell.paragraphs[0]
+            logo_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+            logo_run = logo_paragraph.add_run()
+            logo_run.add_picture(logo_path, width=Inches(1.15))
+
+            header_paragraph = right_cell.paragraphs[0]
+            header_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+            header_paragraph.paragraph_format.space_after = Pt(0)
+            run1 = header_paragraph.add_run("PEMERINTAH KELURAHAN TADOKKONG")
+            run1.bold = True
+            run1.font.size = Pt(12)
+            run2 = header_paragraph.add_run("\nKECAMATAN LEMBANG KABUPATEN PINRANG")
+            run2.bold = True
+            run2.font.size = Pt(12)
+            run3 = header_paragraph.add_run("\nJl. Poros Tadokkong, Kecamatan Lembang, Kabupaten Pinrang")
+            run3.font.size = Pt(10)
+
+            line = doc.add_paragraph("=" * 60)
+            line.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+            line.paragraph_format.space_after = Pt(6)
+        else:
+            header_lines = [
+                "PEMERINTAH KELURAHAN TADOKKONG",
+                "KECAMATAN LEMBANG KABUPATEN PINRANG",
+                "Jl. Poros Tadokkong, Kecamatan Lembang, Kabupaten Pinrang",
+            ]
+
+            for idx, header_line in enumerate(header_lines):
+                p = doc.add_paragraph(header_line)
+                p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+                p.paragraph_format.space_after = Pt(0 if idx < len(header_lines) - 1 else 4)
+                run = p.runs[0]
+                run.bold = True if idx < 2 else False
+                run.font.size = Pt(12 if idx < 2 else 10)
+
+            line = doc.add_paragraph("=" * 60)
+            line.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+            line.paragraph_format.space_after = Pt(6)
+
+        title_code = self._generate_nomor_surat(surat_title)
+        nomor = doc.add_paragraph(f"Nomor\t: {title_code}")
+        nomor.paragraph_format.space_after = Pt(0)
+        perihal = doc.add_paragraph(f"Perihal\t: {surat_title.upper() if surat_title else 'SURAT KETERANGAN'}")
+        perihal.paragraph_format.space_after = Pt(8)
+
+    def _generate_nomor_surat(self, surat_title):
+        """Generate a simple formal letter number based on the title."""
+        now = datetime.now()
+        month_romawi = [
+            "I", "II", "III", "IV", "V", "VI",
+            "VII", "VIII", "IX", "X", "XI", "XII"
+        ][now.month - 1]
+
+        normalized = (surat_title or "SURAT").lower()
+        if "domisili" in normalized:
+            code = "DS"
+        elif "usaha" in normalized:
+            code = "US"
+        elif "pengantar" in normalized:
+            code = "PG"
+        else:
+            code = "SK"
+
+        return f"140/{code}/TDK/{month_romawi}/{now.year}"
+
+    def _is_biodata_line(self, line):
+        """Detect identity rows that should be aligned with a colon."""
+        if ":" not in line:
+            return False
+        label = line.split(":", 1)[0].strip().lower()
+        known_labels = {
+            "nama",
+            "nomor induk kependudukan",
+            "jenis kelamin",
+            "alamat",
+            "pekerjaan",
+            "pekerjaan/usaha",
+        }
+        return label in known_labels
+
+    def _format_biodata_label(self, label):
+        """Normalize biodata labels so alignment stays consistent in DOCX."""
+        target_width = 24
+        return label.ljust(target_width)
+
+    def _find_logo_path(self):
+        """Locate the logo file from datasurat or common local paths."""
+        candidate_paths = [
+            "datasurat/Logo_Universitas_Muhammadiyah_Makassar_Resmi.jpg",
+            "logo.png",
+            "logo.jpg",
+            "logo.jpeg",
+            "logo_um.png",
+            "logo_um.jpg",
+            "logo_um.jpeg",
+            "logo_unismuh.png",
+            "logo_unismuh.jpg",
+            "assets/logo.png",
+            "assets/logo.jpg",
+            "static/logo.png",
+            "static/logo.jpg",
+        ]
+
+        for candidate in candidate_paths:
+            if os.path.exists(candidate):
+                return candidate
+        return None
 
     def process_surat(self,surat_type, entities):
         """Process and generate specific surat type"""
